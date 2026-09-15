@@ -23,7 +23,9 @@ class WarehouseLoader:
                 "port": int(os.getenv("MYSQL_WAREHOUSE_PORT", os.getenv("MYSQL_PORT", "3306"))),
                 "user": os.getenv("MYSQL_WAREHOUSE_USER", os.getenv("MYSQL_USER", "root")),
                 "password": os.getenv("MYSQL_WAREHOUSE_PASSWORD", os.getenv("MYSQL_PASSWORD", "")),
-                "connection_timeout": 30,
+                "connection_timeout": 60,
+                "read_timeout": 120,
+                "write_timeout": 120,
                 "use_pure": True,
                 "autocommit": True,
             }
@@ -57,7 +59,9 @@ class WarehouseLoader:
             "port": int(os.getenv("MYSQL_WAREHOUSE_PORT", os.getenv("MYSQL_PORT", "3306"))),
             "user": os.getenv("MYSQL_WAREHOUSE_USER", os.getenv("MYSQL_USER", "root")),
             "password": os.getenv("MYSQL_WAREHOUSE_PASSWORD", os.getenv("MYSQL_PASSWORD", "")),
-            "connection_timeout": 10,
+            "connection_timeout": 30,
+            "read_timeout": 60,
+            "write_timeout": 60,
             "use_pure": True,
         }
         database = os.getenv("MYSQL_WAREHOUSE_DATABASE", "hr_analytics_warehouse")
@@ -82,15 +86,24 @@ class WarehouseLoader:
             admin.close()
 
     def _executemany_with_retry(self, cursor, query: str, rows, attempts: int = 4):
-        for attempt in range(attempts):
-            try:
-                cursor.executemany(query, rows)
-                return
-            except mysql.connector.Error as exc:
-                if exc.errno != 1205 or attempt == attempts - 1:
-                    raise
-                self.connection.rollback()
-                cursor.execute("SET SESSION innodb_lock_wait_timeout = 5")
+        batch_size = int(os.getenv("MYSQL_INSERT_BATCH_SIZE", "25"))
+        rows = list(rows)
+        for start in range(0, len(rows), batch_size):
+            batch = rows[start:start + batch_size]
+            for attempt in range(attempts):
+                try:
+                    cursor.executemany(query, batch)
+                    break
+                except mysql.connector.Error as exc:
+                    if exc.errno not in {1205, 2006, 2013, 2055} or attempt == attempts - 1:
+                        raise
+                    if exc.errno == 1205:
+                        self.connection.rollback()
+                        cursor.execute("SET SESSION innodb_lock_wait_timeout = 5")
+                    else:
+                        self.connection = None
+                        self._ensure_connection()
+                        cursor = self.connection.cursor()
 
     def load_processed_csvs(
         self,
