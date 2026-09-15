@@ -22,6 +22,34 @@ def _resolve_project_data_file(*candidates: str) -> Path:
     return project_root / candidates[0]
 
 
+def _warehouse_database(cursor, connection) -> str:
+    configured = os.getenv("MYSQL_WAREHOUSE_DATABASE", "").strip().strip('"').strip("'")
+    connected = getattr(connection, "database", "") or ""
+    candidates = [configured, connected, "hr_db", "defaultdb", "hr_analytics_warehouse"]
+    cursor.execute("SHOW DATABASES")
+    database_rows = cursor.fetchall()
+    available = {
+        next(iter(row.values())) if isinstance(row, dict) else row[0]
+        for row in database_rows
+    }
+    for database in dict.fromkeys(candidates):
+        if database in available:
+            cursor.execute(
+                """
+                SELECT COUNT(*)
+                FROM information_schema.tables
+                WHERE table_schema = %s
+                  AND table_name IN ('fact_performance_reviews', 'dim_employee', 'dim_date')
+                """,
+                (database,),
+            )
+            table_count = cursor.fetchone()
+            table_count = next(iter(table_count.values())) if isinstance(table_count, dict) else table_count[0]
+            if table_count == 3:
+                return database
+    raise ValueError("No database with the required warehouse tables was found.")
+
+
 @st.cache_data(show_spinner="Loading HR analytics data...")
 def ensure_demo_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Load and transform the bundled IBM HR dataset for demo/fallback use."""
@@ -107,6 +135,7 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Load review and employee data from MySQL."""
     conn = DatabaseConnection().get_connection()
     cursor = conn.cursor(dictionary=True)
+    database = _warehouse_database(cursor, conn)
 
     cursor.execute(
         """
@@ -116,6 +145,24 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """
     )
     review_rows = cursor.fetchall()
+    if not review_rows:
+        cursor.execute(
+            f"""
+            SELECT
+                fact.review_id,
+                employee.business_key AS employee_id,
+                employee.department,
+                date_dim.full_date AS review_date,
+                fact.performance_score
+            FROM `{database}`.fact_performance_reviews AS fact
+            JOIN `{database}`.dim_employee AS employee
+                ON employee.employee_sk = fact.employee_sk
+            JOIN `{database}`.dim_date AS date_dim
+                ON date_dim.date_sk = fact.date_sk
+            ORDER BY date_dim.full_date ASC, fact.review_id ASC
+            """
+        )
+        review_rows = cursor.fetchall()
     review_df = pd.DataFrame(review_rows)
     if review_df.empty:
         raise ValueError("No review rows found in the live MySQL database.")
@@ -127,15 +174,30 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         ["employee_id", "department", "review_date", "performance_score"]
     ].copy()
     review_df = review_df.copy()
-    review_df.insert(0, "review_id", range(1, len(review_df) + 1))
+    if "review_id" not in review_df.columns:
+        review_df.insert(0, "review_id", range(1, len(review_df) + 1))
 
     cursor.execute(
-        """
+        f"""
         SELECT employee_id, department, role_name, salary, hire_date
         FROM hr_analytics_oltp.employees
         """
     )
     employee_df = pd.DataFrame(cursor.fetchall())
+    if employee_df.empty:
+        cursor.execute(
+            f"""
+            SELECT
+                business_key AS employee_id,
+                department,
+                role_name,
+                salary,
+                start_date AS hire_date
+            FROM `{database}`.dim_employee
+            WHERE is_current = 1
+            """
+        )
+        employee_df = pd.DataFrame(cursor.fetchall())
 
     raw_df = employee_df[
         ["employee_id", "department", "role_name", "salary", "hire_date"]
@@ -171,18 +233,19 @@ def load_warehouse_analytics_data() -> pd.DataFrame:
     """Load analytics rows from the reporting warehouse, not the OLTP database."""
     conn = DatabaseConnection().get_connection()
     cursor = conn.cursor(dictionary=True)
+    warehouse_database = _warehouse_database(cursor, conn)
     cursor.execute(
-        """
+        f"""
         SELECT
             fact.review_id,
             employee.business_key AS employee_id,
             employee.department,
             date_dim.full_date AS review_date,
             fact.performance_score
-        FROM hr_analytics_warehouse.fact_performance_reviews AS fact
-        JOIN hr_analytics_warehouse.dim_employee AS employee
+        FROM `{warehouse_database}`.fact_performance_reviews AS fact
+        JOIN `{warehouse_database}`.dim_employee AS employee
             ON employee.employee_sk = fact.employee_sk
-        JOIN hr_analytics_warehouse.dim_date AS date_dim
+        JOIN `{warehouse_database}`.dim_date AS date_dim
             ON date_dim.date_sk = fact.date_sk
         ORDER BY date_dim.full_date ASC, fact.review_id ASC
         """
@@ -190,7 +253,7 @@ def load_warehouse_analytics_data() -> pd.DataFrame:
     rows = cursor.fetchall()
     warehouse_df = pd.DataFrame(rows)
     if warehouse_df.empty:
-        raise ValueError("No warehouse fact rows found in hr_analytics_warehouse.")
+        raise ValueError(f"No warehouse fact rows found in {warehouse_database}.")
     warehouse_df["review_date"] = pd.to_datetime(warehouse_df["review_date"]).dt.strftime("%Y-%m-%d")
     return warehouse_df[
         ["review_id", "employee_id", "department", "review_date", "performance_score"]

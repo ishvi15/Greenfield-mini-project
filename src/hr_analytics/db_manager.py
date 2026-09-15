@@ -2,7 +2,15 @@ import os
 from typing import Optional
 
 import mysql.connector
+from dotenv import load_dotenv
 from mysql.connector import Error
+
+
+load_dotenv(override=True)
+
+
+def _env_setting(name: str, default: str) -> str:
+    return os.getenv(name, default).strip().strip('"').strip("'")
 
 
 class SingletonMeta(type):
@@ -20,11 +28,11 @@ class DatabaseConnection(metaclass=SingletonMeta):
 
     def get_connection_config(self) -> dict:
         return {
-            "host": os.getenv("MYSQL_HOST", "localhost"),
-            "port": int(os.getenv("MYSQL_PORT", "3306")),
-            "user": os.getenv("MYSQL_USER", "root"),
-            "password": os.getenv("MYSQL_PASSWORD", ""),
-            "database": os.getenv("MYSQL_DATABASE", "hr_analytics_oltp"),
+            "host": _env_setting("MYSQL_HOST", "localhost"),
+            "port": int(_env_setting("MYSQL_PORT", "3306")),
+            "user": _env_setting("MYSQL_USER", "root"),
+            "password": _env_setting("MYSQL_PASSWORD", ""),
+            "database": _env_setting("MYSQL_DATABASE", "hr_analytics_oltp"),
             "autocommit": False,
             "connection_timeout": 30,
             "use_pure": True,
