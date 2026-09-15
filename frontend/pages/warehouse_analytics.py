@@ -2,6 +2,7 @@ import plotly.express as px
 import streamlit as st
 
 from backend.analytics_service import build_warehouse_analytics
+from backend.department_service import DEPARTMENTS
 from frontend.ui import style_chart
 
 
@@ -55,6 +56,13 @@ def render_warehouse_analytics(warehouse_review_df, selected_department, selecte
         if risk_df.empty:
             st.info("No attrition risk data is available for the selected filter.")
         else:
+            if selected_department == "All":
+                risk_df = (
+                    risk_df.set_index("department")
+                    .reindex(DEPARTMENTS, fill_value=0)
+                    .rename_axis("department")
+                    .reset_index()
+                )
             risk_fig = px.bar(
                 risk_df,
                 x="department",

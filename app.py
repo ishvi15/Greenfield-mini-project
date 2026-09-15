@@ -35,6 +35,10 @@ except ModuleNotFoundError:
 st.set_page_config(page_title="HR Analytics Command Center", layout="wide")
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
+flash_message = st.session_state.pop("flash_message", None)
+if flash_message:
+    st.success(flash_message)
+
 if "db_ready" not in st.session_state:
     st.session_state["db_ready"] = False
 if "live_mode" not in st.session_state:

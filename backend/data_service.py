@@ -5,6 +5,7 @@ import pandas as pd
 import streamlit as st
 
 from src.hr_analytics.db_manager import DatabaseConnection
+from backend.department_service import normalize_department
 
 
 def _resolve_project_data_file(*candidates: str) -> Path:
@@ -170,6 +171,7 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     review_df["review_date"] = pd.to_datetime(
         review_df["review_date"]
     ).dt.strftime("%Y-%m-%d")
+    review_df["department"] = review_df["department"].map(normalize_department)
     history_df = review_df[
         ["employee_id", "department", "review_date", "performance_score"]
     ].copy()
@@ -219,6 +221,7 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     raw_df = raw_df.rename(
         columns={"employee_id": "EmployeeNumber", "department": "Department"}
     )
+    raw_df["Department"] = raw_df["Department"].map(normalize_department)
     raw_df = raw_df[
         [
             "EmployeeNumber", "Department", "YearsAtCompany",
@@ -255,6 +258,7 @@ def load_warehouse_analytics_data() -> pd.DataFrame:
     if warehouse_df.empty:
         raise ValueError(f"No warehouse fact rows found in {warehouse_database}.")
     warehouse_df["review_date"] = pd.to_datetime(warehouse_df["review_date"]).dt.strftime("%Y-%m-%d")
+    warehouse_df["department"] = warehouse_df["department"].map(normalize_department)
     return warehouse_df[
         ["review_id", "employee_id", "department", "review_date", "performance_score"]
     ]

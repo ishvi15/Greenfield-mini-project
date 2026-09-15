@@ -4,6 +4,7 @@ import plotly.express as px
 import streamlit as st
 
 from backend.kpi_service import calculate_executive_metrics
+from backend.department_service import DEPARTMENTS
 from frontend.ui import animated_kpi_card, style_chart
 
 
@@ -59,7 +60,14 @@ def render_overview(
         st.markdown("<div class='section-title' style='margin-top:1.6rem;'>People Insights</div>", unsafe_allow_html=True)
         chart_col1, chart_col2 = st.columns(2)
         with chart_col1:
-            dept_perf = raw_df.groupby("Department", as_index=False)["PerformanceRating"].mean().rename(columns={"PerformanceRating": "avg_performance_rating"})
+            dept_perf = (
+                raw_df.groupby("Department")["PerformanceRating"]
+                .mean()
+                .reindex(DEPARTMENTS, fill_value=0)
+                .rename("avg_performance_rating")
+                .reset_index()
+                .rename(columns={"index": "Department"})
+            )
             perf_chart = px.bar(
                 dept_perf.sort_values("avg_performance_rating", ascending=False),
                 x="Department",
@@ -74,9 +82,12 @@ def render_overview(
 
         with chart_col2:
             dept_attrition = (
-                raw_df.groupby("Department", as_index=False)["Attrition"]
+                raw_df.groupby("Department")["Attrition"]
                 .apply(lambda s: (s == "Yes").mean() * 100)
-                .rename(columns={"Attrition": "attrition_rate"})
+                .reindex(DEPARTMENTS, fill_value=0)
+                .rename("attrition_rate")
+                .reset_index()
+                .rename(columns={"index": "Department"})
             )
             dept_attrition = dept_attrition.sort_values("attrition_rate", ascending=False)
             attrition_chart = px.bar(
@@ -111,7 +122,7 @@ def render_overview(
                 st.write("Employee onboarding")
                 first_name = st.text_input("First name")
                 last_name = st.text_input("Last name")
-                department = st.selectbox("Department", ["Engineering", "People", "Finance", "Sales", "Operations", "Marketing"])
+                department = st.selectbox("Department", DEPARTMENTS)
                 role = st.text_input("Role")
                 salary = st.number_input("Salary", min_value=30000, step=1000)
                 submitted = st.form_submit_button("Add employee")
@@ -129,7 +140,7 @@ def render_overview(
             with project_form:
                 st.write("Project assignment")
                 project_name = st.text_input("Project name")
-                project_department = st.selectbox("Owner department", ["Engineering", "People", "Finance", "Sales", "Operations", "Marketing"])
+                project_department = st.selectbox("Owner department", DEPARTMENTS)
                 priority = st.selectbox("Priority", ["Low", "Medium", "High", "Critical"])
                 allocated_hours = st.number_input("Allocated hours", min_value=10, step=10)
                 project_submitted = st.form_submit_button("Create project")

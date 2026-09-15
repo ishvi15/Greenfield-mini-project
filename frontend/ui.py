@@ -4,6 +4,8 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+from backend.department_service import DEPARTMENTS
+
 
 def compact_count(value: int) -> str:
     if value >= 1000:
@@ -88,7 +90,7 @@ def render_sidebar(history_df, review_df, st_autorefresh):
             pass
 
         st.markdown("<div class='section-title' style='margin-top:1.2rem;'>Filters</div>", unsafe_allow_html=True)
-        selected_department = st.selectbox("Department", ["All"] + sorted(history_df["department"].dropna().unique().tolist()))
+        selected_department = st.selectbox("Department", ["All", *DEPARTMENTS])
         selected_year = st.selectbox("Year", ["All"] + sorted(review_df["review_date"].str[:4].unique().tolist()))
 
         st.markdown("<div class='section-title' style='margin-top:1.2rem;'>Live pulse</div>", unsafe_allow_html=True)
