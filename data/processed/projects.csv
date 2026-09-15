@@ -1,0 +1,1001 @@
+ProjectID,ProjectName,Client,Priority,Budget,StartDate,EndDate,Status,RequiredHeadcount
+PRJ00001,Cloud Transformation 1,Oracle,High,6677968,2026-08-02,2027-03-02,Active,573
+PRJ00002,Healthcare Transformation 2,Deloitte,High,749957,2025-02-12,2025-11-08,Completed,106
+PRJ00003,Healthcare Transformation 3,Amazon,Low,2167971,2024-05-20,2026-04-17,Completed,46
+PRJ00004,Retail Transformation 4,Oracle,Medium,5443118,2025-08-20,2027-07-19,Active,245
+PRJ00005,Banking Transformation 5,Deloitte,Medium,2830953,2025-09-02,2026-08-11,Completed,134
+PRJ00006,AI Transformation 6,Deloitte,High,3511337,2025-05-15,2026-02-23,Completed,123
+PRJ00007,Analytics Transformation 7,Amazon,Low,4353935,2025-10-09,2027-02-25,Active,49
+PRJ00008,AI Transformation 8,TCS,Medium,7457550,2025-04-03,2027-04-24,Active,110
+PRJ00009,Healthcare Transformation 9,Oracle,Low,1083470,2025-05-18,2027-04-16,Active,648
+PRJ00010,AI Transformation 10,Oracle,High,3688729,2024-12-30,2026-04-20,Completed,53
+PRJ00011,Cloud Transformation 11,Accenture,Medium,2257472,2024-03-19,2025-09-23,Completed,131
+PRJ00012,AI Transformation 12,IBM,Low,1935615,2025-08-20,2027-09-09,Active,237
+PRJ00013,Retail Transformation 13,Deloitte,Medium,5868707,2026-04-11,2027-01-04,Active,267
+PRJ00014,Analytics Transformation 14,Amazon,High,7393779,2026-04-24,2027-03-28,Active,371
+PRJ00015,ERP Transformation 15,Microsoft,High,5257851,2024-07-24,2026-03-06,Completed,65
+PRJ00016,Banking Transformation 16,Infosys,Medium,7921260,2026-03-06,2027-01-29,On Hold,35
+PRJ00017,ERP Transformation 17,Google,High,6749420,2025-12-23,2026-12-25,On Hold,180
+PRJ00018,Retail Transformation 18,IBM,Medium,3536646,2026-04-02,2027-08-08,Active,107
+PRJ00019,Retail Transformation 19,Microsoft,High,7723454,2024-07-04,2026-06-05,Completed,90
+PRJ00020,Analytics Transformation 20,Deloitte,Low,1032909,2024-10-19,2025-09-27,Completed,58
+PRJ00021,Healthcare Transformation 21,HSBC,Low,7720743,2023-12-24,2025-10-13,Completed,176
+PRJ00022,Banking Transformation 22,TCS,Medium,6947473,2025-08-31,2026-12-10,On Hold,183
+PRJ00023,Retail Transformation 23,Google,Medium,527223,2026-06-18,2027-03-12,Active,274
+PRJ00024,Healthcare Transformation 24,Google,Low,1392638,2025-05-23,2027-02-24,On Hold,317
+PRJ00025,Healthcare Transformation 25,IBM,High,1782108,2026-03-15,2027-09-05,On Hold,93
+PRJ00026,Healthcare Transformation 26,Accenture,Medium,663382,2025-11-25,2026-05-24,Completed,158
+PRJ00027,Cloud Transformation 27,Amazon,High,7865278,2024-10-04,2026-02-10,Completed,60
+PRJ00028,Banking Transformation 28,Infosys,High,6880393,2026-07-05,2026-11-25,Active,171
+PRJ00029,Banking Transformation 29,Infosys,Low,1885185,2026-06-11,2026-12-17,Active,400
+PRJ00030,Cloud Transformation 30,TCS,Low,6287029,2024-02-03,2025-10-08,Completed,163
+PRJ00031,Banking Transformation 31,Accenture,Medium,4841740,2024-07-28,2026-03-08,Completed,178
+PRJ00032,AI Transformation 32,Accenture,High,5435091,2026-04-10,2027-02-05,Active,79
+PRJ00033,AI Transformation 33,Microsoft,Low,5794075,2025-10-17,2027-02-02,Active,197
+PRJ00034,Analytics Transformation 34,Accenture,High,4813054,2025-12-11,2026-07-11,Completed,164
+PRJ00035,Healthcare Transformation 35,Google,Low,7901965,2024-11-05,2025-12-09,Completed,94
+PRJ00036,Analytics Transformation 36,Infosys,Medium,2097274,2025-12-15,2027-02-14,Active,168
+PRJ00037,Retail Transformation 37,Deloitte,Medium,7746387,2024-07-13,2026-01-06,Completed,157
+PRJ00038,Banking Transformation 38,Microsoft,High,3877432,2025-09-04,2027-09-12,Active,117
+PRJ00039,Cloud Transformation 39,Oracle,High,4998690,2025-07-01,2026-12-07,Active,50
+PRJ00040,ERP Transformation 40,Infosys,High,7835719,2026-01-10,2027-01-14,Active,82
+PRJ00041,AI Transformation 41,Amazon,Low,5034780,2025-12-31,2027-07-21,On Hold,510
+PRJ00042,Analytics Transformation 42,Oracle,High,3909248,2025-04-05,2026-11-29,Active,109
+PRJ00043,AI Transformation 43,Google,Medium,518080,2026-04-27,2027-05-06,Active,247
+PRJ00044,ERP Transformation 44,Deloitte,Low,6627922,2026-04-01,2027-06-02,On Hold,172
+PRJ00045,Cloud Transformation 45,Oracle,Medium,2326207,2025-11-03,2027-06-19,On Hold,50
+PRJ00046,AI Transformation 46,Accenture,High,920624,2025-10-22,2027-07-17,On Hold,171
+PRJ00047,Cloud Transformation 47,Amazon,Low,1172023,2025-11-30,2027-07-11,Active,603
+PRJ00048,AI Transformation 48,Oracle,Medium,1505681,2026-07-10,2027-08-13,Active,181
+PRJ00049,Healthcare Transformation 49,IBM,High,5695748,2025-10-27,2027-02-16,On Hold,87
+PRJ00050,ERP Transformation 50,HSBC,High,6118068,2023-11-05,2025-10-20,Completed,53
+PRJ00051,Retail Transformation 51,Google,Low,5914853,2026-04-14,2027-02-25,Active,453
+PRJ00052,AI Transformation 52,Infosys,Low,5222732,2025-06-25,2026-03-06,Completed,90
+PRJ00053,Cloud Transformation 53,TCS,Medium,1611126,2026-07-08,2027-07-15,On Hold,132
+PRJ00054,Cloud Transformation 54,Accenture,Medium,1823276,2025-05-20,2026-11-17,On Hold,162
+PRJ00055,Healthcare Transformation 55,TCS,High,6102442,2024-07-08,2025-11-09,Completed,61
+PRJ00056,Cloud Transformation 56,HSBC,High,7963451,2026-03-14,2026-12-05,Active,471
+PRJ00057,ERP Transformation 57,HSBC,Low,2266889,2024-11-30,2025-11-04,Completed,110
+PRJ00058,Analytics Transformation 58,HSBC,Low,4598102,2026-05-02,2027-09-02,Active,157
+PRJ00059,Banking Transformation 59,Deloitte,Medium,869826,2025-10-18,2026-07-19,Completed,114
+PRJ00060,Cloud Transformation 60,Infosys,Low,6419567,2025-03-18,2026-06-09,Completed,179
+PRJ00061,AI Transformation 61,Google,Low,802225,2025-10-20,2026-08-10,Completed,129
+PRJ00062,Cloud Transformation 62,Deloitte,High,850885,2025-10-20,2027-07-22,Active,91
+PRJ00063,Cloud Transformation 63,Oracle,Low,1362295,2025-01-25,2026-07-25,Completed,90
+PRJ00064,Healthcare Transformation 64,Google,High,7752838,2024-03-15,2025-11-01,Completed,138
+PRJ00065,AI Transformation 65,Google,Low,3286573,2024-09-21,2026-05-16,Completed,85
+PRJ00066,ERP Transformation 66,Google,Low,1406771,2026-01-16,2027-02-17,Active,288
+PRJ00067,Cloud Transformation 67,Oracle,Medium,3433147,2024-10-03,2026-07-26,Completed,66
+PRJ00068,AI Transformation 68,Oracle,Medium,3253660,2025-03-08,2026-04-20,Completed,57
+PRJ00069,ERP Transformation 69,TCS,Medium,6200211,2025-04-01,2026-07-10,Completed,74
+PRJ00070,AI Transformation 70,Microsoft,Medium,1997935,2025-11-13,2027-03-31,On Hold,278
+PRJ00071,AI Transformation 71,Microsoft,Low,4145385,2025-03-29,2027-02-25,Active,156
+PRJ00072,Healthcare Transformation 72,TCS,High,3731253,2024-06-19,2026-03-07,Completed,84
+PRJ00073,AI Transformation 73,Deloitte,High,4861407,2026-05-09,2027-02-20,On Hold,518
+PRJ00074,ERP Transformation 74,Deloitte,High,6072029,2025-11-12,2027-01-21,On Hold,116
+PRJ00075,Banking Transformation 75,Microsoft,Low,3019285,2025-09-29,2027-03-22,On Hold,201
+PRJ00076,ERP Transformation 76,Deloitte,Low,2980135,2025-09-07,2027-05-10,Active,205
+PRJ00077,Banking Transformation 77,Deloitte,Low,6775807,2026-05-08,2027-05-16,Active,382
+PRJ00078,ERP Transformation 78,Deloitte,Low,7493793,2025-10-03,2027-07-31,On Hold,190
+PRJ00079,Retail Transformation 79,IBM,Low,5992068,2025-02-19,2026-03-21,Completed,100
+PRJ00080,Banking Transformation 80,Oracle,Low,4469373,2024-04-08,2025-12-31,Completed,142
+PRJ00081,Banking Transformation 81,Microsoft,Medium,4823924,2025-04-10,2027-01-07,Active,127
+PRJ00082,AI Transformation 82,Oracle,Low,3103987,2025-10-01,2027-04-02,Active,293
+PRJ00083,AI Transformation 83,Amazon,High,4485732,2025-06-09,2026-05-05,Completed,134
+PRJ00084,Retail Transformation 84,Deloitte,Low,5329077,2025-07-17,2026-11-19,Active,515
+PRJ00085,Retail Transformation 85,Oracle,High,6003413,2024-03-15,2026-01-30,Completed,95
+PRJ00086,Analytics Transformation 86,Deloitte,High,1975444,2025-05-14,2026-12-06,Active,84
+PRJ00087,Retail Transformation 87,Amazon,Low,2590426,2025-08-23,2027-07-05,Active,344
+PRJ00088,Cloud Transformation 88,Infosys,Low,4955457,2026-06-13,2027-06-03,On Hold,241
+PRJ00089,Analytics Transformation 89,Infosys,Low,7336770,2025-10-14,2027-03-24,On Hold,105
+PRJ00090,Analytics Transformation 90,TCS,Medium,1835113,2025-11-29,2027-05-19,Active,151
+PRJ00091,ERP Transformation 91,Oracle,Low,2826256,2025-12-14,2027-05-31,Active,121
+PRJ00092,Banking Transformation 92,Oracle,Medium,4189918,2025-11-21,2027-06-18,Active,179
+PRJ00093,ERP Transformation 93,Accenture,Medium,7991252,2025-01-25,2026-03-21,Completed,180
+PRJ00094,Cloud Transformation 94,Deloitte,Low,1781823,2026-06-05,2026-12-29,Active,177
+PRJ00095,Retail Transformation 95,Accenture,Low,4408456,2026-07-13,2027-05-13,Active,68
+PRJ00096,Retail Transformation 96,IBM,Low,663845,2024-08-29,2026-05-01,Completed,44
+PRJ00097,Retail Transformation 97,Infosys,High,3450766,2025-07-19,2027-08-03,Active,245
+PRJ00098,Healthcare Transformation 98,TCS,Low,2350012,2024-05-28,2026-01-27,Completed,155
+PRJ00099,Retail Transformation 99,Amazon,Medium,3319658,2026-03-28,2027-05-24,Active,160
+PRJ00100,Banking Transformation 100,Google,Medium,1570619,2025-07-02,2027-05-08,Active,297
+PRJ00101,Retail Transformation 101,IBM,Low,6061645,2025-11-14,2026-10-26,On Hold,211
+PRJ00102,Cloud Transformation 102,Infosys,High,921818,2024-01-10,2025-09-19,Completed,166
+PRJ00103,Retail Transformation 103,Accenture,Medium,6885657,2025-01-28,2026-02-28,Completed,125
+PRJ00104,ERP Transformation 104,Microsoft,Medium,662598,2026-03-25,2027-05-16,On Hold,88
+PRJ00105,Cloud Transformation 105,Microsoft,Low,837709,2026-07-19,2027-04-10,Active,71
+PRJ00106,Cloud Transformation 106,Amazon,Low,1778275,2025-04-15,2027-02-16,Active,236
+PRJ00107,Healthcare Transformation 107,Oracle,Medium,6367537,2025-02-21,2025-12-15,Completed,58
+PRJ00108,Healthcare Transformation 108,IBM,Low,6526017,2025-02-21,2026-02-07,Completed,111
+PRJ00109,AI Transformation 109,IBM,High,3116887,2025-01-10,2026-05-23,Completed,169
+PRJ00110,Retail Transformation 110,Oracle,High,5466876,2025-05-07,2027-04-23,Active,143
+PRJ00111,AI Transformation 111,HSBC,Low,5536617,2025-09-27,2027-02-14,Active,111
+PRJ00112,Analytics Transformation 112,Amazon,Medium,4968991,2025-07-03,2027-07-29,Active,68
+PRJ00113,Healthcare Transformation 113,Accenture,High,7626756,2025-06-01,2026-02-06,Completed,138
+PRJ00114,Retail Transformation 114,Accenture,Low,7979073,2025-02-22,2025-12-07,Completed,151
+PRJ00115,Retail Transformation 115,Google,Low,4876728,2025-08-17,2026-12-30,Active,385
+PRJ00116,Analytics Transformation 116,TCS,Medium,4399643,2026-03-29,2027-08-24,On Hold,184
+PRJ00117,ERP Transformation 117,Oracle,High,2839819,2024-07-18,2025-10-15,Completed,93
+PRJ00118,Healthcare Transformation 118,IBM,Low,3679192,2026-04-12,2027-06-07,On Hold,117
+PRJ00119,Cloud Transformation 119,Infosys,High,3476487,2024-07-10,2025-12-04,Completed,101
+PRJ00120,Healthcare Transformation 120,HSBC,Low,585153,2026-02-21,2027-03-05,Active,431
+PRJ00121,Cloud Transformation 121,Deloitte,Medium,5157155,2026-05-09,2026-11-25,Active,311
+PRJ00122,Banking Transformation 122,Infosys,Medium,7151603,2025-08-26,2027-06-13,Active,84
+PRJ00123,Retail Transformation 123,Oracle,Medium,6069700,2025-02-04,2026-03-17,Completed,67
+PRJ00124,Healthcare Transformation 124,Accenture,Medium,6757359,2025-12-15,2027-07-23,Active,171
+PRJ00125,ERP Transformation 125,HSBC,Medium,2433893,2026-02-15,2027-06-02,Active,312
+PRJ00126,AI Transformation 126,TCS,Low,2053149,2024-12-21,2026-05-08,Completed,122
+PRJ00127,Banking Transformation 127,IBM,Low,5506243,2024-09-03,2025-12-10,Completed,151
+PRJ00128,ERP Transformation 128,Oracle,Medium,2005264,2025-06-11,2026-06-24,Completed,124
+PRJ00129,ERP Transformation 129,Amazon,High,5141911,2025-01-09,2025-11-14,Completed,108
+PRJ00130,AI Transformation 130,Amazon,Low,2885211,2024-07-29,2026-06-11,Completed,35
+PRJ00131,Cloud Transformation 131,Amazon,Medium,7728656,2026-01-01,2027-04-05,Active,311
+PRJ00132,Retail Transformation 132,Infosys,High,5340404,2025-06-20,2026-11-15,Active,178
+PRJ00133,Cloud Transformation 133,IBM,Medium,1214549,2026-07-18,2026-12-29,Active,65
+PRJ00134,Analytics Transformation 134,Deloitte,Low,5500674,2026-06-15,2027-07-25,On Hold,103
+PRJ00135,Retail Transformation 135,Infosys,Medium,2994378,2026-04-21,2027-07-07,Active,449
+PRJ00136,ERP Transformation 136,IBM,Low,1005248,2025-03-26,2027-05-20,On Hold,451
+PRJ00137,Analytics Transformation 137,Oracle,Low,2270207,2025-08-01,2026-12-02,Active,233
+PRJ00138,Cloud Transformation 138,Google,Low,1129689,2025-07-29,2026-07-04,Completed,38
+PRJ00139,Banking Transformation 139,IBM,Medium,2943260,2024-04-16,2026-01-17,Completed,43
+PRJ00140,Banking Transformation 140,Infosys,High,6266202,2024-12-06,2026-03-20,Completed,91
+PRJ00141,Retail Transformation 141,Microsoft,Low,2385838,2025-03-15,2026-04-01,Completed,94
+PRJ00142,Analytics Transformation 142,Google,High,1000280,2025-05-06,2027-02-26,Active,324
+PRJ00143,Retail Transformation 143,Microsoft,Medium,6277049,2024-11-20,2026-03-10,Completed,171
+PRJ00144,Healthcare Transformation 144,TCS,Medium,4172187,2024-10-19,2026-01-20,Completed,128
+PRJ00145,Banking Transformation 145,Accenture,Low,2600238,2024-11-10,2026-07-25,Completed,109
+PRJ00146,Analytics Transformation 146,HSBC,Low,837487,2025-09-30,2026-04-19,Completed,122
+PRJ00147,Healthcare Transformation 147,Infosys,Medium,2022441,2026-05-17,2027-06-10,Active,129
+PRJ00148,Analytics Transformation 148,Infosys,High,4442732,2026-01-03,2027-09-03,On Hold,167
+PRJ00149,Banking Transformation 149,Microsoft,High,3266593,2024-10-05,2026-02-25,Completed,61
+PRJ00150,Banking Transformation 150,Deloitte,Low,807837,2024-08-16,2025-12-04,Completed,166
+PRJ00151,ERP Transformation 151,Microsoft,Medium,7755395,2026-03-06,2027-02-19,Active,372
+PRJ00152,Banking Transformation 152,TCS,Medium,3966571,2025-03-27,2026-10-13,Active,839
+PRJ00153,Healthcare Transformation 153,Infosys,Low,4208108,2024-05-21,2025-11-22,Completed,90
+PRJ00154,Healthcare Transformation 154,Google,Medium,4175184,2026-05-02,2027-02-26,Active,302
+PRJ00155,AI Transformation 155,IBM,High,6454089,2025-12-09,2026-12-14,On Hold,261
+PRJ00156,Healthcare Transformation 156,Deloitte,High,2384925,2025-04-25,2025-11-05,Completed,143
+PRJ00157,Retail Transformation 157,Microsoft,Low,7480522,2025-05-04,2026-12-10,On Hold,772
+PRJ00158,Banking Transformation 158,HSBC,Medium,7502171,2024-04-16,2026-03-18,Completed,129
+PRJ00159,Retail Transformation 159,TCS,High,3717752,2025-12-16,2027-02-14,Active,20
+PRJ00160,Banking Transformation 160,Google,High,2817331,2023-11-12,2025-10-12,Completed,32
+PRJ00161,ERP Transformation 161,TCS,Medium,7383267,2025-06-03,2027-05-13,Active,160
+PRJ00162,Analytics Transformation 162,Google,Medium,5017941,2024-05-03,2026-03-15,Completed,130
+PRJ00163,Analytics Transformation 163,TCS,Medium,4319707,2026-02-25,2027-07-22,Active,223
+PRJ00164,Banking Transformation 164,Oracle,Low,3712592,2025-05-26,2027-01-17,On Hold,330
+PRJ00165,ERP Transformation 165,Infosys,Low,7306591,2025-06-06,2026-01-16,Completed,95
+PRJ00166,Retail Transformation 166,Amazon,High,4713523,2024-10-15,2025-09-15,Completed,107
+PRJ00167,Analytics Transformation 167,Infosys,High,4911997,2026-02-26,2026-12-03,On Hold,211
+PRJ00168,Retail Transformation 168,Google,High,4438372,2026-08-07,2026-12-25,On Hold,132
+PRJ00169,Healthcare Transformation 169,Deloitte,Low,1173733,2026-04-01,2027-04-04,Active,103
+PRJ00170,Retail Transformation 170,Accenture,Low,6529038,2025-06-04,2027-07-13,Active,216
+PRJ00171,AI Transformation 171,IBM,High,2469395,2025-12-08,2027-07-17,On Hold,28
+PRJ00172,Cloud Transformation 172,Microsoft,Medium,1325800,2025-04-30,2027-03-09,Active,105
+PRJ00173,Retail Transformation 173,Google,Low,3012103,2025-08-19,2026-12-03,Active,355
+PRJ00174,Analytics Transformation 174,Amazon,Medium,3507008,2026-07-22,2027-03-28,On Hold,101
+PRJ00175,Healthcare Transformation 175,Deloitte,Low,6219356,2025-03-28,2026-06-01,Completed,53
+PRJ00176,AI Transformation 176,IBM,Medium,5698507,2026-05-19,2027-01-10,Active,521
+PRJ00177,Cloud Transformation 177,Oracle,Medium,5851131,2025-12-03,2027-08-07,Active,741
+PRJ00178,Analytics Transformation 178,Infosys,Medium,6184212,2025-09-29,2026-04-06,Completed,90
+PRJ00179,ERP Transformation 179,IBM,Medium,5859806,2026-07-08,2027-05-27,Active,233
+PRJ00180,Retail Transformation 180,HSBC,High,3727040,2025-08-26,2027-02-18,On Hold,546
+PRJ00181,Retail Transformation 181,IBM,Medium,5321871,2026-06-21,2027-02-11,Active,138
+PRJ00182,Analytics Transformation 182,Deloitte,Medium,567930,2025-08-26,2026-03-16,Completed,106
+PRJ00183,Healthcare Transformation 183,Infosys,Medium,7007386,2025-08-28,2026-11-07,Active,22
+PRJ00184,Cloud Transformation 184,Oracle,Low,2602409,2025-10-08,2027-04-11,Active,421
+PRJ00185,Banking Transformation 185,Microsoft,Low,5921898,2025-08-10,2026-12-22,Active,155
+PRJ00186,Healthcare Transformation 186,Accenture,Low,1602362,2025-06-01,2026-01-01,Completed,83
+PRJ00187,Banking Transformation 187,Deloitte,High,2184388,2024-10-18,2026-03-16,Completed,71
+PRJ00188,Healthcare Transformation 188,TCS,Medium,7466509,2024-05-06,2025-11-11,Completed,142
+PRJ00189,Banking Transformation 189,Accenture,High,4428648,2024-08-16,2025-12-11,Completed,111
+PRJ00190,Analytics Transformation 190,Deloitte,Low,3568343,2026-06-03,2027-02-05,On Hold,298
+PRJ00191,ERP Transformation 191,TCS,High,4315021,2025-07-14,2026-01-24,Completed,134
+PRJ00192,Analytics Transformation 192,Accenture,High,6160939,2024-09-09,2026-04-02,Completed,38
+PRJ00193,Healthcare Transformation 193,Oracle,Low,1030302,2025-03-05,2026-08-02,Completed,100
+PRJ00194,Banking Transformation 194,Deloitte,High,1672534,2025-12-20,2027-03-16,Active,51
+PRJ00195,Retail Transformation 195,Microsoft,High,2469645,2025-03-22,2026-07-26,Completed,50
+PRJ00196,Retail Transformation 196,Accenture,Low,6733911,2026-06-06,2027-04-29,On Hold,195
+PRJ00197,Healthcare Transformation 197,Google,Medium,5993883,2025-11-11,2027-05-15,Active,421
+PRJ00198,ERP Transformation 198,Amazon,Low,3608230,2024-04-19,2025-12-07,Completed,155
+PRJ00199,Analytics Transformation 199,Accenture,High,6251902,2024-11-04,2025-12-30,Completed,150
+PRJ00200,AI Transformation 200,Deloitte,Medium,2092229,2024-03-20,2025-09-18,Completed,135
+PRJ00201,AI Transformation 201,Oracle,Low,5864455,2025-04-16,2027-06-02,On Hold,631
+PRJ00202,Analytics Transformation 202,Accenture,High,1556326,2026-08-04,2026-11-07,Active,159
+PRJ00203,Analytics Transformation 203,TCS,High,5418937,2026-05-01,2026-11-17,Active,268
+PRJ00204,Analytics Transformation 204,Google,Low,523786,2024-11-17,2026-04-17,Completed,115
+PRJ00205,Healthcare Transformation 205,HSBC,High,1422129,2025-07-23,2026-06-01,Completed,138
+PRJ00206,AI Transformation 206,Accenture,High,5439656,2026-08-01,2026-12-19,Active,146
+PRJ00207,AI Transformation 207,Google,Low,4031273,2025-02-20,2026-05-17,Completed,55
+PRJ00208,Retail Transformation 208,Infosys,Medium,4805352,2025-07-29,2026-11-14,Active,359
+PRJ00209,Cloud Transformation 209,IBM,High,6600556,2025-12-26,2027-06-27,Active,376
+PRJ00210,ERP Transformation 210,Infosys,Low,761310,2025-05-28,2027-07-06,Active,300
+PRJ00211,Retail Transformation 211,Microsoft,Medium,6476055,2024-04-30,2025-12-12,Completed,71
+PRJ00212,ERP Transformation 212,IBM,High,1050982,2026-07-08,2026-11-23,On Hold,27
+PRJ00213,Retail Transformation 213,IBM,Low,2973781,2024-05-05,2025-09-29,Completed,96
+PRJ00214,AI Transformation 214,Microsoft,Low,5960284,2025-10-09,2027-05-21,Active,180
+PRJ00215,Retail Transformation 215,Infosys,High,3971319,2025-11-05,2027-01-31,On Hold,115
+PRJ00216,Retail Transformation 216,Microsoft,Medium,4079955,2024-05-16,2025-12-25,Completed,159
+PRJ00217,Cloud Transformation 217,Infosys,High,1265248,2024-09-20,2026-04-06,Completed,46
+PRJ00218,AI Transformation 218,Accenture,High,5167176,2026-06-28,2027-05-22,Active,312
+PRJ00219,Banking Transformation 219,Microsoft,Medium,3466195,2024-06-01,2025-10-31,Completed,120
+PRJ00220,Analytics Transformation 220,Amazon,Medium,5536604,2025-04-20,2027-05-17,On Hold,489
+PRJ00221,Cloud Transformation 221,Google,Low,4544897,2024-07-23,2026-06-22,Completed,137
+PRJ00222,Analytics Transformation 222,TCS,Medium,1463727,2024-12-29,2026-06-20,Completed,170
+PRJ00223,Analytics Transformation 223,Deloitte,Low,6937690,2025-10-25,2027-02-05,Active,333
+PRJ00224,Healthcare Transformation 224,Amazon,Low,6018288,2025-10-04,2027-09-07,Active,296
+PRJ00225,Cloud Transformation 225,HSBC,Low,6895554,2026-03-31,2026-10-27,Active,164
+PRJ00226,AI Transformation 226,Google,High,5250645,2024-09-01,2026-02-22,Completed,113
+PRJ00227,Banking Transformation 227,Amazon,High,6758839,2026-07-10,2026-12-24,Active,43
+PRJ00228,Retail Transformation 228,Accenture,High,3604230,2026-02-03,2027-05-15,Active,97
+PRJ00229,AI Transformation 229,Google,High,6828666,2025-06-08,2026-03-01,Completed,146
+PRJ00230,ERP Transformation 230,Infosys,Low,4056893,2025-09-03,2026-11-23,Active,487
+PRJ00231,ERP Transformation 231,Oracle,Low,1454770,2025-12-31,2027-05-13,Active,324
+PRJ00232,Banking Transformation 232,IBM,Medium,4920243,2025-03-06,2026-06-19,Completed,37
+PRJ00233,Retail Transformation 233,IBM,High,564483,2026-07-22,2027-02-02,Active,150
+PRJ00234,Analytics Transformation 234,HSBC,Medium,3252489,2025-06-12,2026-04-28,Completed,43
+PRJ00235,Cloud Transformation 235,Google,Medium,4967624,2024-03-23,2025-12-03,Completed,77
+PRJ00236,Analytics Transformation 236,Accenture,High,3830874,2025-12-01,2027-07-26,Active,316
+PRJ00237,AI Transformation 237,Infosys,High,7731902,2026-07-24,2027-05-24,On Hold,430
+PRJ00238,Banking Transformation 238,Deloitte,Medium,1466144,2024-05-23,2026-01-07,Completed,143
+PRJ00239,Analytics Transformation 239,IBM,Medium,7479539,2025-03-11,2026-03-01,Completed,64
+PRJ00240,Retail Transformation 240,Microsoft,High,4154719,2026-02-10,2026-11-27,Active,196
+PRJ00241,Retail Transformation 241,HSBC,Low,3348043,2025-11-19,2026-11-22,Active,484
+PRJ00242,Healthcare Transformation 242,Microsoft,Low,4777787,2025-09-04,2026-05-20,Completed,30
+PRJ00243,Banking Transformation 243,Google,High,1362386,2024-08-27,2026-02-17,Completed,132
+PRJ00244,Healthcare Transformation 244,Google,Low,1132109,2025-05-13,2026-05-05,Completed,81
+PRJ00245,Retail Transformation 245,IBM,Low,4265690,2023-11-12,2025-09-27,Completed,108
+PRJ00246,Banking Transformation 246,IBM,Medium,7749828,2025-05-20,2027-07-29,Active,120
+PRJ00247,Retail Transformation 247,Microsoft,Medium,4209510,2026-03-06,2026-12-29,On Hold,47
+PRJ00248,Healthcare Transformation 248,Amazon,Medium,4755850,2025-07-03,2027-03-02,Active,549
+PRJ00249,AI Transformation 249,Amazon,Medium,7476777,2024-03-19,2025-12-21,Completed,110
+PRJ00250,Healthcare Transformation 250,IBM,Low,3725272,2024-12-20,2025-09-18,Completed,177
+PRJ00251,Retail Transformation 251,IBM,Low,2079067,2025-11-04,2026-11-03,Active,446
+PRJ00252,Cloud Transformation 252,Amazon,Medium,1368236,2024-01-21,2025-12-14,Completed,51
+PRJ00253,Banking Transformation 253,Microsoft,Low,5920106,2025-06-12,2027-04-06,Active,201
+PRJ00254,Retail Transformation 254,TCS,Low,5615418,2024-07-21,2026-04-10,Completed,58
+PRJ00255,Retail Transformation 255,Deloitte,Medium,6195006,2024-10-24,2026-02-05,Completed,70
+PRJ00256,Banking Transformation 256,Accenture,High,3265646,2025-07-06,2027-09-01,Active,416
+PRJ00257,ERP Transformation 257,IBM,High,3296443,2024-10-16,2026-01-29,Completed,93
+PRJ00258,ERP Transformation 258,Deloitte,High,5491567,2024-12-12,2026-06-03,Completed,162
+PRJ00259,Healthcare Transformation 259,Deloitte,Low,7140941,2026-07-02,2027-03-20,Active,299
+PRJ00260,AI Transformation 260,Deloitte,Low,3535234,2024-06-21,2026-06-10,Completed,63
+PRJ00261,Cloud Transformation 261,Accenture,Medium,2110656,2025-03-10,2026-03-09,Completed,135
+PRJ00262,AI Transformation 262,HSBC,High,4758809,2025-07-02,2026-06-05,Completed,111
+PRJ00263,AI Transformation 263,Accenture,Low,1599319,2025-06-13,2027-07-09,Active,61
+PRJ00264,Cloud Transformation 264,IBM,High,6549721,2026-05-28,2027-01-04,Active,238
+PRJ00265,Banking Transformation 265,Oracle,Medium,5622045,2024-07-12,2026-01-16,Completed,145
+PRJ00266,Healthcare Transformation 266,Oracle,Medium,7283228,2024-11-04,2025-12-28,Completed,152
+PRJ00267,ERP Transformation 267,IBM,Medium,4372852,2025-05-09,2027-01-20,Active,244
+PRJ00268,Healthcare Transformation 268,TCS,Medium,1859442,2025-07-12,2027-04-26,Active,376
+PRJ00269,Cloud Transformation 269,HSBC,High,5878599,2025-06-30,2027-08-18,Active,153
+PRJ00270,AI Transformation 270,TCS,High,2891281,2026-02-05,2027-07-23,Active,224
+PRJ00271,Retail Transformation 271,TCS,High,7471325,2025-02-19,2026-05-24,Completed,64
+PRJ00272,ERP Transformation 272,Amazon,Medium,946751,2024-07-21,2026-04-23,Completed,96
+PRJ00273,Retail Transformation 273,Microsoft,Medium,2383567,2024-12-10,2026-02-04,Completed,74
+PRJ00274,Analytics Transformation 274,Google,High,821310,2025-01-18,2026-06-25,Completed,113
+PRJ00275,Analytics Transformation 275,Infosys,Medium,5661915,2025-01-28,2025-12-16,Completed,102
+PRJ00276,ERP Transformation 276,Oracle,High,5103703,2025-12-18,2026-07-05,Completed,80
+PRJ00277,Retail Transformation 277,Microsoft,Medium,2493470,2025-10-07,2027-07-10,On Hold,506
+PRJ00278,Retail Transformation 278,IBM,Medium,1026864,2025-05-23,2026-07-21,Completed,51
+PRJ00279,Banking Transformation 279,TCS,Low,2529524,2025-05-20,2025-12-02,Completed,136
+PRJ00280,AI Transformation 280,IBM,Medium,2517999,2026-03-18,2027-05-20,Active,174
+PRJ00281,Healthcare Transformation 281,Accenture,High,4912906,2026-05-11,2026-11-25,Active,272
+PRJ00282,Healthcare Transformation 282,Amazon,Medium,7826035,2025-07-08,2027-06-29,Active,595
+PRJ00283,ERP Transformation 283,HSBC,Low,636249,2025-09-23,2027-04-29,Active,350
+PRJ00284,Cloud Transformation 284,Microsoft,Low,6667195,2025-01-24,2026-07-11,Completed,124
+PRJ00285,ERP Transformation 285,TCS,Medium,7324206,2026-06-07,2026-11-04,Active,156
+PRJ00286,Banking Transformation 286,Infosys,Low,2029058,2025-06-15,2027-06-07,Active,150
+PRJ00287,AI Transformation 287,HSBC,High,867473,2026-07-13,2027-06-04,Active,236
+PRJ00288,ERP Transformation 288,HSBC,Low,3840545,2025-05-18,2026-11-03,Active,144
+PRJ00289,ERP Transformation 289,Amazon,Low,2103091,2025-11-09,2027-06-12,On Hold,468
+PRJ00290,ERP Transformation 290,Microsoft,Medium,4165413,2025-02-17,2026-07-21,Completed,76
+PRJ00291,Retail Transformation 291,Accenture,High,4662454,2025-07-30,2027-05-26,On Hold,370
+PRJ00292,ERP Transformation 292,Microsoft,Low,4060961,2026-02-07,2027-07-05,Active,214
+PRJ00293,Healthcare Transformation 293,HSBC,Medium,1360653,2024-10-11,2025-10-10,Completed,130
+PRJ00294,Retail Transformation 294,IBM,Low,4074520,2024-11-08,2026-03-16,Completed,126
+PRJ00295,Retail Transformation 295,Amazon,Low,7798400,2024-07-09,2025-12-30,Completed,176
+PRJ00296,ERP Transformation 296,Amazon,High,6130298,2025-10-04,2027-05-23,On Hold,377
+PRJ00297,Analytics Transformation 297,Google,High,1697720,2026-02-09,2027-07-02,Active,415
+PRJ00298,AI Transformation 298,Google,High,2479672,2025-09-01,2027-05-25,Active,48
+PRJ00299,Retail Transformation 299,IBM,High,5575903,2026-02-08,2027-04-16,Active,63
+PRJ00300,ERP Transformation 300,Infosys,High,5314404,2024-06-16,2025-12-27,Completed,87
+PRJ00301,ERP Transformation 301,HSBC,High,1451675,2024-07-01,2026-02-08,Completed,35
+PRJ00302,Healthcare Transformation 302,Deloitte,Low,1487850,2024-06-19,2026-05-11,Completed,35
+PRJ00303,Cloud Transformation 303,IBM,Medium,6321531,2024-07-06,2026-04-03,Completed,172
+PRJ00304,AI Transformation 304,Google,High,4292008,2025-12-06,2027-01-23,On Hold,313
+PRJ00305,Analytics Transformation 305,Accenture,Low,3414414,2025-04-05,2025-12-30,Completed,88
+PRJ00306,ERP Transformation 306,HSBC,High,6471087,2025-11-06,2027-07-17,Active,316
+PRJ00307,Cloud Transformation 307,Accenture,Low,2381075,2025-08-21,2027-09-04,Active,460
+PRJ00308,Cloud Transformation 308,Infosys,High,3527419,2025-06-16,2026-05-04,Completed,52
+PRJ00309,Analytics Transformation 309,TCS,High,5633394,2026-02-07,2027-06-09,Active,90
+PRJ00310,Retail Transformation 310,Infosys,Low,3945999,2026-07-12,2027-03-20,On Hold,165
+PRJ00311,AI Transformation 311,Google,Medium,5888326,2025-06-19,2027-08-03,Active,73
+PRJ00312,ERP Transformation 312,Google,Low,5866980,2024-01-10,2025-12-19,Completed,148
+PRJ00313,Retail Transformation 313,TCS,High,7474211,2025-07-17,2026-12-18,Active,383
+PRJ00314,Cloud Transformation 314,Google,Medium,6450309,2025-01-22,2026-05-28,Completed,80
+PRJ00315,Analytics Transformation 315,Microsoft,Medium,2146699,2024-08-09,2025-11-22,Completed,97
+PRJ00316,Cloud Transformation 316,HSBC,Low,4975138,2025-11-05,2027-03-02,Active,468
+PRJ00317,Healthcare Transformation 317,IBM,High,1936134,2024-10-03,2025-09-20,Completed,73
+PRJ00318,ERP Transformation 318,IBM,High,7422583,2025-08-11,2027-08-18,Active,482
+PRJ00319,Banking Transformation 319,IBM,Medium,5962074,2026-07-04,2026-11-05,On Hold,66
+PRJ00320,Healthcare Transformation 320,Amazon,Medium,7957446,2024-02-28,2025-10-26,Completed,42
+PRJ00321,ERP Transformation 321,Infosys,High,7250213,2026-03-19,2027-09-06,Active,70
+PRJ00322,Retail Transformation 322,Microsoft,Low,1002586,2026-01-19,2027-03-14,Active,127
+PRJ00323,Retail Transformation 323,Oracle,Medium,5589035,2024-03-10,2026-01-14,Completed,132
+PRJ00324,Retail Transformation 324,Google,Medium,4819966,2024-09-17,2026-03-04,Completed,139
+PRJ00325,Retail Transformation 325,Microsoft,Medium,4271484,2026-03-04,2027-02-13,Active,345
+PRJ00326,ERP Transformation 326,Deloitte,Low,4007568,2025-11-07,2026-06-26,Completed,96
+PRJ00327,Healthcare Transformation 327,Accenture,High,6901526,2024-12-26,2026-05-25,Completed,68
+PRJ00328,Retail Transformation 328,HSBC,Medium,694416,2024-02-05,2025-11-24,Completed,52
+PRJ00329,Retail Transformation 329,Oracle,High,5393445,2024-02-28,2026-01-25,Completed,124
+PRJ00330,Retail Transformation 330,IBM,Low,6141511,2025-04-08,2026-07-20,Completed,73
+PRJ00331,Analytics Transformation 331,Microsoft,Medium,1623527,2025-11-13,2026-10-17,Active,277
+PRJ00332,Analytics Transformation 332,Deloitte,Medium,879520,2025-08-07,2027-04-18,On Hold,322
+PRJ00333,ERP Transformation 333,TCS,Medium,1116829,2024-10-13,2025-10-27,Completed,175
+PRJ00334,Analytics Transformation 334,IBM,Low,5625801,2024-09-17,2025-12-27,Completed,60
+PRJ00335,ERP Transformation 335,Accenture,Low,3566928,2024-11-20,2026-06-26,Completed,33
+PRJ00336,Healthcare Transformation 336,Deloitte,Low,837682,2026-05-05,2027-08-17,Active,227
+PRJ00337,Analytics Transformation 337,Infosys,Low,4333497,2024-12-31,2026-06-05,Completed,164
+PRJ00338,ERP Transformation 338,IBM,Medium,1863165,2025-01-05,2025-11-24,Completed,141
+PRJ00339,Healthcare Transformation 339,Accenture,Low,7448194,2024-06-04,2025-10-03,Completed,146
+PRJ00340,ERP Transformation 340,Infosys,High,3590009,2025-12-07,2027-07-28,Active,418
+PRJ00341,Healthcare Transformation 341,HSBC,Low,7815697,2024-10-21,2026-06-19,Completed,156
+PRJ00342,Retail Transformation 342,HSBC,Low,7067474,2026-08-01,2027-08-14,Active,35
+PRJ00343,Cloud Transformation 343,Amazon,Low,4530296,2025-10-22,2027-08-04,On Hold,51
+PRJ00344,Cloud Transformation 344,Oracle,High,5303067,2024-03-06,2025-09-26,Completed,60
+PRJ00345,AI Transformation 345,Infosys,Medium,4012983,2026-06-19,2027-01-18,On Hold,108
+PRJ00346,Healthcare Transformation 346,IBM,Medium,7821725,2024-09-09,2026-05-02,Completed,87
+PRJ00347,Banking Transformation 347,Google,Low,2239308,2025-08-07,2026-11-13,Active,398
+PRJ00348,Healthcare Transformation 348,Deloitte,Medium,1952759,2025-09-09,2027-06-14,Active,245
+PRJ00349,Healthcare Transformation 349,Accenture,Low,6975919,2025-11-15,2027-04-06,Active,418
+PRJ00350,Analytics Transformation 350,HSBC,Low,4561597,2025-08-31,2027-09-07,On Hold,70
+PRJ00351,Healthcare Transformation 351,HSBC,High,2996571,2024-12-31,2026-04-10,Completed,82
+PRJ00352,Banking Transformation 352,Infosys,Medium,4524882,2025-08-19,2027-01-27,Active,202
+PRJ00353,AI Transformation 353,IBM,Low,5056615,2024-12-08,2026-03-27,Completed,78
+PRJ00354,Analytics Transformation 354,Google,Medium,852879,2024-08-09,2026-01-24,Completed,98
+PRJ00355,Retail Transformation 355,HSBC,Low,4518808,2025-01-17,2026-07-05,Completed,103
+PRJ00356,Healthcare Transformation 356,HSBC,High,1416258,2024-08-12,2025-11-12,Completed,156
+PRJ00357,Cloud Transformation 357,Amazon,Low,4954698,2025-10-18,2027-02-12,Active,274
+PRJ00358,AI Transformation 358,Deloitte,Medium,6517635,2025-08-27,2026-04-17,Completed,127
+PRJ00359,AI Transformation 359,TCS,High,3913387,2025-08-31,2026-12-22,Active,181
+PRJ00360,Retail Transformation 360,Oracle,Medium,3194149,2025-05-21,2027-06-13,Active,61
+PRJ00361,Banking Transformation 361,IBM,High,4989182,2025-10-17,2026-07-15,Completed,63
+PRJ00362,Cloud Transformation 362,Deloitte,High,804840,2025-06-05,2026-11-01,Active,346
+PRJ00363,Cloud Transformation 363,HSBC,High,577738,2026-01-23,2027-06-23,On Hold,588
+PRJ00364,ERP Transformation 364,HSBC,Medium,5879718,2024-12-25,2025-10-10,Completed,140
+PRJ00365,Analytics Transformation 365,TCS,Medium,2788723,2025-12-05,2026-12-20,Active,163
+PRJ00366,Cloud Transformation 366,Infosys,Low,2658094,2025-01-16,2026-06-18,Completed,82
+PRJ00367,Analytics Transformation 367,HSBC,Low,6157286,2026-08-07,2027-04-03,Active,285
+PRJ00368,Analytics Transformation 368,Deloitte,Medium,4822487,2026-05-17,2027-08-21,Active,357
+PRJ00369,Cloud Transformation 369,Google,Medium,3214567,2025-04-19,2026-01-21,Completed,85
+PRJ00370,Retail Transformation 370,Oracle,Medium,6822969,2026-08-11,2027-02-23,On Hold,204
+PRJ00371,Healthcare Transformation 371,IBM,High,2694066,2024-10-26,2026-02-27,Completed,102
+PRJ00372,AI Transformation 372,Microsoft,Medium,3073678,2025-08-25,2027-02-10,Active,380
+PRJ00373,Banking Transformation 373,Microsoft,Low,2974954,2024-07-20,2025-11-30,Completed,78
+PRJ00374,Cloud Transformation 374,Infosys,High,4316637,2025-03-15,2026-04-23,Completed,137
+PRJ00375,Retail Transformation 375,TCS,Medium,6853116,2025-10-08,2027-04-22,Active,41
+PRJ00376,Analytics Transformation 376,Oracle,Low,6831214,2025-09-08,2027-02-01,Active,143
+PRJ00377,Healthcare Transformation 377,Infosys,Low,6403618,2025-07-07,2026-11-23,Active,499
+PRJ00378,AI Transformation 378,TCS,Low,2195813,2025-01-09,2025-10-30,Completed,76
+PRJ00379,ERP Transformation 379,TCS,Medium,1475091,2026-05-30,2027-01-05,Active,255
+PRJ00380,Retail Transformation 380,Microsoft,Low,4236979,2025-08-12,2027-08-07,Active,531
+PRJ00381,Healthcare Transformation 381,Deloitte,Medium,5230429,2025-12-25,2026-12-19,Active,33
+PRJ00382,Banking Transformation 382,Amazon,Medium,2634541,2024-08-13,2025-12-21,Completed,134
+PRJ00383,Healthcare Transformation 383,Microsoft,High,4054231,2025-07-29,2027-02-01,Active,183
+PRJ00384,AI Transformation 384,Infosys,High,2908291,2025-11-14,2026-07-13,Completed,67
+PRJ00385,ERP Transformation 385,Deloitte,Medium,7794903,2024-10-04,2026-06-06,Completed,37
+PRJ00386,AI Transformation 386,TCS,High,5982241,2026-02-02,2027-04-23,On Hold,211
+PRJ00387,Healthcare Transformation 387,Deloitte,Low,1568264,2026-06-15,2027-01-12,On Hold,351
+PRJ00388,Analytics Transformation 388,Amazon,Medium,4383958,2026-04-22,2026-10-14,Active,275
+PRJ00389,Healthcare Transformation 389,Deloitte,High,2576281,2025-11-09,2027-05-18,Active,141
+PRJ00390,Cloud Transformation 390,Microsoft,High,7290395,2026-05-27,2027-03-03,Active,426
+PRJ00391,Cloud Transformation 391,Oracle,High,1346382,2025-10-04,2026-10-21,Active,36
+PRJ00392,Banking Transformation 392,Amazon,High,6712108,2025-12-29,2027-08-15,Active,325
+PRJ00393,Healthcare Transformation 393,Oracle,High,1675542,2024-11-09,2026-01-02,Completed,104
+PRJ00394,Analytics Transformation 394,IBM,Medium,5344209,2026-03-19,2027-02-09,Active,336
+PRJ00395,Cloud Transformation 395,HSBC,High,6038263,2025-09-04,2027-03-26,Active,321
+PRJ00396,ERP Transformation 396,Amazon,Low,5463263,2026-01-15,2027-03-15,Active,67
+PRJ00397,Banking Transformation 397,Deloitte,Low,4657568,2025-05-05,2027-01-10,On Hold,92
+PRJ00398,Analytics Transformation 398,TCS,Medium,6341058,2024-07-29,2026-02-19,Completed,97
+PRJ00399,Retail Transformation 399,Google,Low,4472163,2025-01-28,2026-05-30,Completed,90
+PRJ00400,Analytics Transformation 400,Google,Medium,983384,2024-12-20,2026-04-21,Completed,145
+PRJ00401,Healthcare Transformation 401,TCS,High,3758295,2025-04-06,2027-05-14,Active,324
+PRJ00402,Banking Transformation 402,Microsoft,Medium,7606269,2024-11-30,2026-05-02,Completed,93
+PRJ00403,AI Transformation 403,HSBC,Medium,6151169,2024-11-03,2025-11-13,Completed,124
+PRJ00404,Cloud Transformation 404,IBM,Low,6132535,2026-07-25,2026-11-19,Active,129
+PRJ00405,Analytics Transformation 405,Accenture,Medium,628628,2025-12-12,2027-01-27,Active,577
+PRJ00406,Banking Transformation 406,Infosys,High,6335336,2025-07-13,2026-05-09,Completed,179
+PRJ00407,Cloud Transformation 407,TCS,Medium,7005481,2026-05-02,2027-05-04,Active,210
+PRJ00408,ERP Transformation 408,HSBC,Medium,4801816,2024-06-20,2025-12-19,Completed,147
+PRJ00409,Analytics Transformation 409,Infosys,Medium,2203956,2025-12-19,2026-12-02,On Hold,376
+PRJ00410,Healthcare Transformation 410,Oracle,Low,1724088,2025-06-03,2026-01-15,Completed,51
+PRJ00411,ERP Transformation 411,Google,High,3267110,2024-03-07,2025-11-04,Completed,32
+PRJ00412,Retail Transformation 412,TCS,Low,6244909,2024-08-22,2025-10-27,Completed,150
+PRJ00413,Retail Transformation 413,Google,Low,7168737,2024-01-25,2025-12-07,Completed,64
+PRJ00414,Cloud Transformation 414,TCS,Low,992680,2024-07-24,2026-06-04,Completed,112
+PRJ00415,Analytics Transformation 415,Amazon,High,3959396,2025-06-11,2026-11-20,Active,176
+PRJ00416,AI Transformation 416,Google,High,2334753,2024-08-06,2025-09-26,Completed,131
+PRJ00417,Healthcare Transformation 417,IBM,Medium,6030477,2026-02-04,2026-11-12,Active,133
+PRJ00418,Healthcare Transformation 418,Deloitte,High,640309,2026-08-11,2027-07-12,Active,117
+PRJ00419,ERP Transformation 419,Amazon,Low,7321257,2026-03-27,2027-07-14,Active,157
+PRJ00420,AI Transformation 420,Microsoft,Low,1749042,2026-01-06,2027-01-12,Active,115
+PRJ00421,ERP Transformation 421,Accenture,Medium,7168409,2023-10-13,2025-10-01,Completed,84
+PRJ00422,Retail Transformation 422,IBM,High,6348842,2024-06-19,2026-02-04,Completed,128
+PRJ00423,AI Transformation 423,Deloitte,Medium,3663927,2025-12-04,2026-07-04,Completed,138
+PRJ00424,AI Transformation 424,Google,High,4693116,2026-07-17,2027-09-04,Active,114
+PRJ00425,Healthcare Transformation 425,Microsoft,Low,856950,2025-09-18,2027-03-31,Active,302
+PRJ00426,ERP Transformation 426,Amazon,High,6241404,2024-01-01,2025-10-28,Completed,95
+PRJ00427,Healthcare Transformation 427,Amazon,High,7633903,2025-05-11,2027-07-18,On Hold,497
+PRJ00428,Analytics Transformation 428,Deloitte,High,3010516,2025-06-07,2026-04-30,Completed,48
+PRJ00429,Banking Transformation 429,TCS,Medium,3719935,2024-09-12,2026-04-13,Completed,54
+PRJ00430,Healthcare Transformation 430,Accenture,High,1319447,2026-06-04,2026-11-22,Active,199
+PRJ00431,Healthcare Transformation 431,IBM,Low,3827786,2025-01-25,2026-07-07,Completed,172
+PRJ00432,Banking Transformation 432,HSBC,Medium,4615480,2026-02-28,2026-10-28,On Hold,22
+PRJ00433,Retail Transformation 433,Google,Low,5414676,2024-04-19,2025-11-04,Completed,45
+PRJ00434,ERP Transformation 434,Oracle,Low,1116618,2026-07-02,2027-08-25,Active,397
+PRJ00435,Banking Transformation 435,Google,Low,3768386,2024-11-05,2026-05-28,Completed,43
+PRJ00436,AI Transformation 436,HSBC,Medium,3519206,2025-09-21,2026-06-21,Completed,115
+PRJ00437,AI Transformation 437,Google,Medium,4265173,2026-06-23,2026-12-19,Active,161
+PRJ00438,AI Transformation 438,Amazon,High,3468848,2025-11-25,2027-05-09,Active,499
+PRJ00439,Analytics Transformation 439,Accenture,Medium,603520,2025-10-13,2027-08-15,Active,97
+PRJ00440,Banking Transformation 440,TCS,High,5297951,2025-05-07,2026-01-28,Completed,90
+PRJ00441,Cloud Transformation 441,Google,Medium,3026072,2025-08-29,2027-04-25,Active,155
+PRJ00442,Cloud Transformation 442,Deloitte,Medium,4032462,2025-09-30,2026-06-01,Completed,150
+PRJ00443,ERP Transformation 443,Oracle,Low,5743162,2025-01-03,2026-07-06,Completed,120
+PRJ00444,Retail Transformation 444,Microsoft,High,3055656,2025-10-03,2027-01-21,Active,143
+PRJ00445,Analytics Transformation 445,IBM,Medium,7245082,2024-08-22,2026-01-24,Completed,41
+PRJ00446,Retail Transformation 446,IBM,High,3020233,2026-01-01,2027-04-02,On Hold,383
+PRJ00447,ERP Transformation 447,Google,Medium,3177120,2024-07-03,2026-05-04,Completed,31
+PRJ00448,Healthcare Transformation 448,Oracle,Medium,3654580,2023-11-12,2025-09-24,Completed,94
+PRJ00449,AI Transformation 449,IBM,High,5467960,2024-07-21,2026-01-25,Completed,159
+PRJ00450,AI Transformation 450,Infosys,Low,2258658,2026-05-14,2027-07-21,On Hold,406
+PRJ00451,Analytics Transformation 451,Deloitte,Low,4688458,2025-07-11,2026-03-18,Completed,127
+PRJ00452,ERP Transformation 452,Google,Low,4049454,2025-01-09,2026-03-12,Completed,107
+PRJ00453,Healthcare Transformation 453,Infosys,Low,3862196,2026-07-08,2027-05-30,Active,79
+PRJ00454,Healthcare Transformation 454,Amazon,Medium,6385734,2025-04-29,2027-05-15,Active,168
+PRJ00455,Banking Transformation 455,Microsoft,High,6950454,2025-11-13,2027-08-13,On Hold,287
+PRJ00456,Banking Transformation 456,IBM,High,5224634,2025-03-01,2026-02-14,Completed,131
+PRJ00457,Retail Transformation 457,Accenture,Medium,1388727,2025-09-02,2027-09-09,On Hold,326
+PRJ00458,Healthcare Transformation 458,TCS,Low,5369740,2025-02-21,2026-04-04,Completed,124
+PRJ00459,ERP Transformation 459,Deloitte,Medium,6978876,2026-04-23,2027-05-29,Active,238
+PRJ00460,Cloud Transformation 460,Accenture,High,4549777,2025-08-26,2027-06-26,Active,131
+PRJ00461,AI Transformation 461,Google,Medium,3116325,2025-04-22,2026-01-14,Completed,63
+PRJ00462,Retail Transformation 462,Accenture,Medium,1318921,2024-05-18,2026-05-01,Completed,173
+PRJ00463,AI Transformation 463,HSBC,High,7296332,2024-08-07,2025-12-26,Completed,40
+PRJ00464,Banking Transformation 464,Microsoft,Low,7211306,2026-08-03,2027-04-06,Active,90
+PRJ00465,Cloud Transformation 465,TCS,High,3276542,2024-05-04,2026-04-12,Completed,178
+PRJ00466,Cloud Transformation 466,Deloitte,Low,2047293,2025-04-11,2027-06-06,Active,594
+PRJ00467,AI Transformation 467,IBM,High,4271308,2024-05-30,2026-01-05,Completed,75
+PRJ00468,Banking Transformation 468,Oracle,High,2834925,2026-01-27,2026-10-15,Active,254
+PRJ00469,Healthcare Transformation 469,Microsoft,Low,2068332,2025-06-26,2026-11-14,Active,193
+PRJ00470,AI Transformation 470,HSBC,Low,7736319,2024-07-27,2026-05-06,Completed,96
+PRJ00471,ERP Transformation 471,IBM,Medium,5628026,2025-04-07,2027-09-05,Active,148
+PRJ00472,ERP Transformation 472,Infosys,Low,1947265,2024-12-28,2026-06-17,Completed,73
+PRJ00473,Healthcare Transformation 473,IBM,High,6138068,2025-08-18,2027-03-14,Active,276
+PRJ00474,ERP Transformation 474,Microsoft,High,3631518,2025-04-17,2026-06-15,Completed,158
+PRJ00475,Retail Transformation 475,IBM,High,5321822,2025-11-26,2027-04-29,Active,44
+PRJ00476,Banking Transformation 476,TCS,Low,5912833,2024-07-02,2026-05-11,Completed,156
+PRJ00477,Cloud Transformation 477,Infosys,Medium,1676892,2026-05-18,2027-07-24,On Hold,71
+PRJ00478,Analytics Transformation 478,Accenture,High,4565194,2025-05-07,2025-12-27,Completed,116
+PRJ00479,Banking Transformation 479,Infosys,Medium,6243651,2024-03-04,2026-01-30,Completed,149
+PRJ00480,Retail Transformation 480,Google,High,5242900,2025-08-16,2027-05-28,Active,229
+PRJ00481,AI Transformation 481,HSBC,High,5009787,2024-12-31,2026-04-24,Completed,63
+PRJ00482,Healthcare Transformation 482,TCS,High,5304273,2024-02-05,2025-12-23,Completed,52
+PRJ00483,Healthcare Transformation 483,Amazon,Low,4202451,2024-05-03,2025-11-09,Completed,111
+PRJ00484,AI Transformation 484,Oracle,Medium,7838436,2025-03-26,2027-05-18,Active,217
+PRJ00485,ERP Transformation 485,Microsoft,Medium,7758582,2025-12-27,2027-02-24,On Hold,90
+PRJ00486,Cloud Transformation 486,IBM,Low,3441304,2025-07-13,2027-02-11,On Hold,143
+PRJ00487,Retail Transformation 487,Google,Low,1667987,2025-10-06,2027-09-01,On Hold,128
+PRJ00488,Analytics Transformation 488,Amazon,Low,3442853,2025-06-24,2027-01-26,Active,71
+PRJ00489,Cloud Transformation 489,Accenture,Low,2954797,2025-10-13,2027-07-15,Active,61
+PRJ00490,Banking Transformation 490,Microsoft,High,6792245,2024-04-24,2026-03-31,Completed,165
+PRJ00491,ERP Transformation 491,Google,Low,7765195,2025-05-01,2026-11-12,Active,134
+PRJ00492,Analytics Transformation 492,Oracle,Low,3794212,2025-01-08,2026-06-01,Completed,140
+PRJ00493,ERP Transformation 493,Deloitte,Medium,4291581,2025-10-23,2027-09-01,Active,119
+PRJ00494,Healthcare Transformation 494,HSBC,Low,7859471,2024-11-13,2026-06-28,Completed,66
+PRJ00495,Healthcare Transformation 495,Amazon,Low,1281328,2024-07-11,2025-12-08,Completed,96
+PRJ00496,Banking Transformation 496,Accenture,High,7174630,2025-12-23,2027-09-03,Active,235
+PRJ00497,Analytics Transformation 497,Oracle,Medium,2752650,2026-04-25,2027-05-20,Active,191
+PRJ00498,Healthcare Transformation 498,IBM,High,5249144,2024-10-13,2026-03-22,Completed,59
+PRJ00499,Banking Transformation 499,Amazon,High,1335293,2025-07-07,2027-04-06,Active,182
+PRJ00500,AI Transformation 500,Microsoft,High,4201774,2025-06-12,2027-06-05,Active,294
+PRJ00501,Cloud Transformation 501,Google,Low,3032231,2025-03-25,2027-05-20,Active,90
+PRJ00502,Banking Transformation 502,Accenture,Medium,1191393,2025-06-25,2026-03-27,Completed,110
+PRJ00503,AI Transformation 503,Deloitte,Low,3062797,2024-10-02,2025-09-16,Completed,41
+PRJ00504,Retail Transformation 504,Microsoft,Low,1298458,2025-07-24,2027-02-09,Active,217
+PRJ00505,Cloud Transformation 505,IBM,High,4857414,2025-03-29,2025-12-13,Completed,62
+PRJ00506,Banking Transformation 506,Accenture,High,7717057,2026-08-10,2026-10-17,Active,136
+PRJ00507,AI Transformation 507,Oracle,Medium,1249363,2024-08-08,2026-06-08,Completed,157
+PRJ00508,ERP Transformation 508,Accenture,Medium,1650323,2026-06-23,2026-12-04,Active,110
+PRJ00509,AI Transformation 509,TCS,Low,571091,2025-07-16,2026-06-07,Completed,101
+PRJ00510,ERP Transformation 510,Oracle,Low,6776933,2026-05-22,2027-05-26,Active,299
+PRJ00511,Analytics Transformation 511,Oracle,High,1342762,2024-04-23,2026-01-16,Completed,122
+PRJ00512,ERP Transformation 512,Deloitte,Medium,7136032,2024-11-16,2026-06-12,Completed,140
+PRJ00513,Cloud Transformation 513,TCS,Low,5533230,2025-07-03,2026-03-26,Completed,102
+PRJ00514,Analytics Transformation 514,HSBC,High,4843194,2026-03-22,2026-10-26,Active,140
+PRJ00515,ERP Transformation 515,Amazon,High,4651419,2026-05-10,2027-05-01,Active,267
+PRJ00516,Banking Transformation 516,IBM,High,4931588,2024-05-22,2026-04-13,Completed,97
+PRJ00517,ERP Transformation 517,Google,Medium,7721031,2026-08-08,2027-04-15,On Hold,133
+PRJ00518,Healthcare Transformation 518,Google,Medium,6962307,2026-01-11,2027-04-18,Active,237
+PRJ00519,AI Transformation 519,HSBC,High,834091,2025-02-11,2025-10-18,Completed,97
+PRJ00520,Healthcare Transformation 520,HSBC,Low,6477965,2025-04-16,2027-05-04,On Hold,221
+PRJ00521,Banking Transformation 521,Deloitte,High,5873216,2026-01-14,2027-05-17,Active,147
+PRJ00522,ERP Transformation 522,Microsoft,Medium,1162880,2025-10-03,2026-12-30,Active,137
+PRJ00523,Healthcare Transformation 523,Accenture,Medium,5419391,2026-05-02,2026-12-31,Active,54
+PRJ00524,Banking Transformation 524,Microsoft,Medium,6360918,2025-06-13,2027-09-10,Active,424
+PRJ00525,Cloud Transformation 525,Microsoft,Medium,1472965,2025-08-18,2026-04-14,Completed,162
+PRJ00526,ERP Transformation 526,Google,High,606241,2025-10-07,2026-11-10,Active,220
+PRJ00527,Cloud Transformation 527,Infosys,Medium,4887286,2025-08-20,2026-10-18,Active,527
+PRJ00528,Cloud Transformation 528,Accenture,High,6789580,2025-06-19,2027-02-22,Active,84
+PRJ00529,Analytics Transformation 529,Amazon,Medium,7270511,2026-03-30,2026-12-12,Active,77
+PRJ00530,ERP Transformation 530,IBM,Low,1146510,2025-03-19,2025-11-19,Completed,110
+PRJ00531,AI Transformation 531,Infosys,Low,1899902,2025-11-26,2027-04-15,Active,384
+PRJ00532,Healthcare Transformation 532,Microsoft,High,6714112,2025-06-25,2026-04-06,Completed,141
+PRJ00533,Cloud Transformation 533,Amazon,Medium,3553256,2026-07-23,2026-10-19,Active,135
+PRJ00534,Analytics Transformation 534,Amazon,Low,7237020,2025-06-01,2026-05-30,Completed,72
+PRJ00535,Retail Transformation 535,Oracle,Medium,2582582,2025-07-31,2027-09-13,On Hold,143
+PRJ00536,Analytics Transformation 536,Microsoft,Low,3627341,2024-12-02,2026-03-04,Completed,110
+PRJ00537,Cloud Transformation 537,TCS,High,3863201,2025-07-21,2026-07-19,Completed,155
+PRJ00538,Analytics Transformation 538,HSBC,Medium,1224654,2024-09-06,2025-12-19,Completed,68
+PRJ00539,Cloud Transformation 539,HSBC,Low,7080923,2026-08-10,2027-04-19,Active,33
+PRJ00540,Retail Transformation 540,Accenture,Low,4638609,2024-07-29,2025-09-30,Completed,172
+PRJ00541,Banking Transformation 541,TCS,High,1763042,2025-07-13,2027-01-21,On Hold,112
+PRJ00542,Cloud Transformation 542,TCS,Medium,5834666,2025-06-27,2026-01-17,Completed,142
+PRJ00543,ERP Transformation 543,Amazon,Low,3656422,2025-05-22,2026-10-17,Active,295
+PRJ00544,AI Transformation 544,Oracle,Low,2497894,2025-08-07,2027-03-19,Active,103
+PRJ00545,Banking Transformation 545,HSBC,High,868262,2025-08-24,2026-07-15,Completed,43
+PRJ00546,Retail Transformation 546,Accenture,Medium,6773834,2025-05-12,2027-07-06,On Hold,122
+PRJ00547,Cloud Transformation 547,Deloitte,High,5465181,2024-07-30,2026-06-27,Completed,78
+PRJ00548,Cloud Transformation 548,HSBC,Medium,7637981,2026-01-04,2026-12-18,Active,331
+PRJ00549,ERP Transformation 549,Infosys,Medium,2459673,2024-08-29,2026-01-25,Completed,68
+PRJ00550,Analytics Transformation 550,IBM,High,1803678,2025-06-18,2026-05-03,Completed,43
+PRJ00551,ERP Transformation 551,Deloitte,High,4995660,2024-03-10,2025-12-27,Completed,88
+PRJ00552,ERP Transformation 552,Infosys,Medium,7651138,2024-07-27,2026-04-30,Completed,76
+PRJ00553,Analytics Transformation 553,IBM,High,2303725,2025-01-20,2026-05-26,Completed,39
+PRJ00554,AI Transformation 554,Oracle,Medium,3823939,2026-02-28,2026-12-27,Active,20
+PRJ00555,ERP Transformation 555,Google,High,3892287,2025-09-02,2027-03-15,Active,202
+PRJ00556,Cloud Transformation 556,Microsoft,Medium,1354860,2025-11-03,2027-07-21,Active,272
+PRJ00557,AI Transformation 557,Amazon,High,1596518,2026-06-04,2026-12-14,Active,446
+PRJ00558,Banking Transformation 558,Microsoft,Low,5416720,2024-07-09,2026-01-21,Completed,150
+PRJ00559,AI Transformation 559,Oracle,Low,4219771,2025-12-17,2026-07-07,Completed,96
+PRJ00560,AI Transformation 560,Amazon,Medium,924779,2026-06-28,2027-03-31,Active,321
+PRJ00561,Analytics Transformation 561,Deloitte,Medium,747315,2024-02-10,2025-10-25,Completed,71
+PRJ00562,ERP Transformation 562,Oracle,High,2806714,2025-01-17,2026-01-08,Completed,149
+PRJ00563,Healthcare Transformation 563,IBM,Low,2561792,2025-10-27,2026-05-30,Completed,141
+PRJ00564,Healthcare Transformation 564,Infosys,High,1235861,2025-12-02,2027-05-11,Active,131
+PRJ00565,Cloud Transformation 565,TCS,High,5791151,2024-10-04,2026-06-05,Completed,59
+PRJ00566,Retail Transformation 566,Accenture,Medium,5067746,2025-11-09,2026-10-22,On Hold,327
+PRJ00567,Healthcare Transformation 567,Accenture,Medium,2768578,2026-02-19,2027-07-29,Active,60
+PRJ00568,AI Transformation 568,HSBC,High,7283480,2025-01-24,2026-03-04,Completed,156
+PRJ00569,Analytics Transformation 569,IBM,High,1839029,2025-11-16,2027-04-14,On Hold,239
+PRJ00570,Healthcare Transformation 570,Amazon,High,5329255,2025-01-16,2026-04-13,Completed,40
+PRJ00571,ERP Transformation 571,Google,High,2484334,2025-07-02,2027-04-29,Active,194
+PRJ00572,Healthcare Transformation 572,Amazon,Low,6376729,2025-06-28,2027-04-14,Active,395
+PRJ00573,Healthcare Transformation 573,Oracle,Medium,5047670,2024-12-07,2025-10-28,Completed,143
+PRJ00574,AI Transformation 574,Amazon,High,5547113,2025-05-02,2025-12-06,Completed,121
+PRJ00575,AI Transformation 575,Accenture,Low,2190005,2024-01-19,2025-11-18,Completed,173
+PRJ00576,Analytics Transformation 576,Accenture,High,683818,2026-02-21,2027-01-11,Active,181
+PRJ00577,Analytics Transformation 577,TCS,Medium,1108439,2025-08-14,2026-06-03,Completed,154
+PRJ00578,ERP Transformation 578,HSBC,Medium,1644639,2025-04-16,2026-01-24,Completed,147
+PRJ00579,Analytics Transformation 579,Infosys,Low,3161566,2025-08-05,2027-05-24,On Hold,348
+PRJ00580,Cloud Transformation 580,IBM,High,3674115,2024-05-04,2025-10-31,Completed,156
+PRJ00581,Cloud Transformation 581,Amazon,Low,5305286,2025-05-11,2026-03-17,Completed,58
+PRJ00582,Cloud Transformation 582,IBM,Medium,7284764,2025-03-29,2025-10-28,Completed,67
+PRJ00583,Healthcare Transformation 583,Microsoft,Medium,1679802,2026-04-23,2027-09-05,On Hold,446
+PRJ00584,ERP Transformation 584,Accenture,High,5836721,2025-05-09,2026-07-06,Completed,61
+PRJ00585,Banking Transformation 585,Accenture,Medium,595593,2026-06-30,2027-09-05,On Hold,393
+PRJ00586,ERP Transformation 586,HSBC,High,6543267,2025-08-03,2026-04-09,Completed,119
+PRJ00587,Banking Transformation 587,Deloitte,High,7920159,2024-05-11,2026-01-29,Completed,53
+PRJ00588,Healthcare Transformation 588,Deloitte,High,7452536,2024-08-12,2026-02-02,Completed,82
+PRJ00589,Banking Transformation 589,Oracle,High,4285673,2025-05-29,2027-08-04,Active,456
+PRJ00590,AI Transformation 590,Accenture,Medium,1378497,2025-04-03,2026-07-28,Completed,102
+PRJ00591,Cloud Transformation 591,Microsoft,Low,1281018,2024-11-01,2026-05-19,Completed,76
+PRJ00592,Banking Transformation 592,Amazon,Medium,5983089,2023-11-30,2025-10-04,Completed,73
+PRJ00593,AI Transformation 593,Microsoft,Medium,2224282,2025-01-29,2026-01-04,Completed,160
+PRJ00594,Banking Transformation 594,TCS,Medium,6041496,2026-01-17,2027-07-23,On Hold,219
+PRJ00595,AI Transformation 595,Deloitte,Low,5110904,2025-07-11,2026-04-15,Completed,99
+PRJ00596,ERP Transformation 596,Amazon,Medium,1235079,2026-05-28,2026-11-09,Active,197
+PRJ00597,Cloud Transformation 597,Microsoft,High,2236047,2023-11-27,2025-09-28,Completed,174
+PRJ00598,Retail Transformation 598,Microsoft,Medium,7084021,2025-06-28,2026-03-18,Completed,179
+PRJ00599,AI Transformation 599,TCS,Medium,2050896,2024-09-12,2025-12-07,Completed,84
+PRJ00600,Cloud Transformation 600,Infosys,High,2708686,2024-07-22,2026-01-31,Completed,179
+PRJ00601,Analytics Transformation 601,HSBC,Low,1017068,2025-02-15,2026-04-02,Completed,31
+PRJ00602,Banking Transformation 602,Accenture,Low,3972771,2025-10-02,2026-06-26,Completed,164
+PRJ00603,Healthcare Transformation 603,Amazon,Medium,7365280,2025-10-17,2027-02-06,On Hold,255
+PRJ00604,Banking Transformation 604,Infosys,Low,7895848,2025-04-07,2027-07-14,Active,241
+PRJ00605,Retail Transformation 605,Amazon,Low,5291740,2025-06-27,2026-03-14,Completed,176
+PRJ00606,Banking Transformation 606,IBM,High,1508997,2025-07-01,2027-08-01,On Hold,556
+PRJ00607,Cloud Transformation 607,Oracle,High,1558524,2025-12-28,2027-01-09,On Hold,232
+PRJ00608,Cloud Transformation 608,Google,Low,2663307,2024-10-18,2026-07-05,Completed,76
+PRJ00609,Retail Transformation 609,TCS,Medium,5130966,2025-10-15,2026-07-11,Completed,136
+PRJ00610,Retail Transformation 610,Amazon,Low,5726588,2024-04-13,2026-03-26,Completed,49
+PRJ00611,AI Transformation 611,Deloitte,High,1743189,2025-07-10,2027-05-15,Active,366
+PRJ00612,AI Transformation 612,IBM,High,7091312,2025-10-20,2026-12-03,Active,123
+PRJ00613,Retail Transformation 613,HSBC,Medium,5992757,2024-05-30,2025-11-13,Completed,93
+PRJ00614,AI Transformation 614,Google,Medium,3880390,2025-10-07,2027-06-12,Active,79
+PRJ00615,AI Transformation 615,Deloitte,Medium,6292449,2024-02-24,2025-10-07,Completed,157
+PRJ00616,ERP Transformation 616,Amazon,Medium,7356730,2024-09-15,2025-12-14,Completed,54
+PRJ00617,Analytics Transformation 617,Infosys,Low,6244955,2026-03-08,2027-03-05,Active,119
+PRJ00618,ERP Transformation 618,Infosys,Medium,2760058,2025-06-07,2026-04-20,Completed,114
+PRJ00619,AI Transformation 619,Oracle,Medium,2273272,2025-10-09,2027-09-08,Active,74
+PRJ00620,Analytics Transformation 620,TCS,Medium,7387193,2026-01-18,2027-06-18,On Hold,91
+PRJ00621,ERP Transformation 621,TCS,Medium,1637913,2025-09-20,2026-05-25,Completed,36
+PRJ00622,AI Transformation 622,Google,High,7841546,2025-11-19,2027-07-31,Active,108
+PRJ00623,Cloud Transformation 623,Amazon,Medium,924121,2025-06-12,2026-11-11,Active,216
+PRJ00624,ERP Transformation 624,Accenture,Medium,4737307,2025-08-19,2027-01-22,On Hold,218
+PRJ00625,Cloud Transformation 625,Accenture,Medium,5483198,2025-11-13,2026-06-12,Completed,102
+PRJ00626,Healthcare Transformation 626,TCS,Medium,3387769,2025-04-10,2027-06-12,Active,38
+PRJ00627,ERP Transformation 627,Amazon,Medium,916503,2025-07-06,2026-04-04,Completed,61
+PRJ00628,Analytics Transformation 628,Oracle,Low,2388376,2024-09-22,2025-10-26,Completed,130
+PRJ00629,Retail Transformation 629,TCS,High,7753041,2026-03-30,2027-09-11,Active,38
+PRJ00630,Retail Transformation 630,Google,Low,1952912,2025-07-18,2026-10-17,Active,575
+PRJ00631,ERP Transformation 631,IBM,Medium,6478900,2026-08-10,2027-02-04,Active,182
+PRJ00632,Retail Transformation 632,Deloitte,Medium,4350354,2025-09-19,2027-03-02,On Hold,353
+PRJ00633,Banking Transformation 633,TCS,Low,3831556,2024-08-17,2025-12-19,Completed,125
+PRJ00634,Banking Transformation 634,Accenture,Low,5930299,2026-08-11,2027-07-01,Active,249
+PRJ00635,Banking Transformation 635,Microsoft,Medium,1035504,2026-03-23,2027-03-14,Active,272
+PRJ00636,Analytics Transformation 636,HSBC,Medium,6003930,2024-10-30,2026-03-26,Completed,57
+PRJ00637,ERP Transformation 637,Oracle,High,4839373,2025-05-15,2027-09-11,Active,235
+PRJ00638,Analytics Transformation 638,IBM,Medium,6040929,2025-05-11,2026-11-11,Active,197
+PRJ00639,Banking Transformation 639,Infosys,Medium,2676225,2025-11-10,2026-06-04,Completed,112
+PRJ00640,Banking Transformation 640,Amazon,Low,6439712,2026-01-19,2027-04-29,On Hold,161
+PRJ00641,ERP Transformation 641,Oracle,Low,4984844,2025-06-23,2027-01-18,On Hold,326
+PRJ00642,Healthcare Transformation 642,HSBC,High,7551788,2025-12-14,2027-04-14,Active,274
+PRJ00643,ERP Transformation 643,Microsoft,Medium,1573273,2025-11-02,2027-01-13,Active,118
+PRJ00644,Analytics Transformation 644,Google,Low,3315489,2025-08-08,2027-07-26,Active,788
+PRJ00645,Cloud Transformation 645,HSBC,Medium,7110981,2026-04-23,2027-04-12,Active,112
+PRJ00646,Healthcare Transformation 646,HSBC,Medium,7640499,2026-02-05,2027-02-23,On Hold,227
+PRJ00647,Retail Transformation 647,Oracle,Low,1505088,2025-11-08,2026-07-18,Completed,69
+PRJ00648,ERP Transformation 648,Deloitte,High,7805212,2026-01-31,2027-07-11,On Hold,130
+PRJ00649,ERP Transformation 649,Deloitte,Low,7989727,2026-06-05,2027-01-23,Active,361
+PRJ00650,ERP Transformation 650,Google,High,4590124,2025-12-23,2026-12-25,On Hold,107
+PRJ00651,Banking Transformation 651,Amazon,High,4292097,2025-01-01,2026-05-16,Completed,37
+PRJ00652,Retail Transformation 652,Microsoft,High,5654629,2025-06-12,2026-05-20,Completed,50
+PRJ00653,Retail Transformation 653,Infosys,Medium,539167,2024-05-24,2026-01-07,Completed,147
+PRJ00654,AI Transformation 654,Accenture,Low,2098673,2024-10-19,2026-05-04,Completed,152
+PRJ00655,Cloud Transformation 655,Accenture,Medium,1581549,2025-06-04,2026-08-12,Completed,146
+PRJ00656,Cloud Transformation 656,Microsoft,High,3001501,2024-07-25,2025-11-30,Completed,98
+PRJ00657,Healthcare Transformation 657,TCS,Medium,4137847,2025-12-24,2027-07-06,On Hold,110
+PRJ00658,ERP Transformation 658,Infosys,Medium,6792425,2025-03-23,2026-12-20,On Hold,280
+PRJ00659,Cloud Transformation 659,Oracle,Low,1600633,2025-07-05,2026-01-20,Completed,31
+PRJ00660,Cloud Transformation 660,Microsoft,Medium,6465223,2024-09-06,2026-08-03,Completed,114
+PRJ00661,Banking Transformation 661,HSBC,Low,5727233,2026-07-26,2027-04-23,Active,346
+PRJ00662,Banking Transformation 662,Amazon,High,6286040,2025-10-04,2026-07-21,Completed,41
+PRJ00663,AI Transformation 663,TCS,Medium,4479524,2024-06-09,2025-12-30,Completed,145
+PRJ00664,AI Transformation 664,HSBC,Medium,6050444,2026-05-01,2027-08-31,Active,750
+PRJ00665,Healthcare Transformation 665,IBM,Low,1650611,2024-08-22,2025-11-21,Completed,113
+PRJ00666,Banking Transformation 666,IBM,High,2871516,2024-07-19,2026-06-22,Completed,175
+PRJ00667,Cloud Transformation 667,IBM,High,7025992,2024-08-01,2026-06-21,Completed,63
+PRJ00668,ERP Transformation 668,Deloitte,Medium,1845311,2024-10-30,2025-11-20,Completed,84
+PRJ00669,Banking Transformation 669,Infosys,Medium,2467172,2024-11-06,2025-12-03,Completed,42
+PRJ00670,Analytics Transformation 670,IBM,Low,4644845,2025-09-10,2026-06-30,Completed,102
+PRJ00671,AI Transformation 671,Microsoft,Medium,5905088,2024-07-26,2026-06-29,Completed,112
+PRJ00672,Retail Transformation 672,Amazon,High,7321434,2024-12-21,2026-03-16,Completed,44
+PRJ00673,ERP Transformation 673,Accenture,Medium,6695324,2025-04-04,2026-07-25,Completed,48
+PRJ00674,Analytics Transformation 674,Google,Low,5929095,2026-01-14,2026-07-22,Completed,170
+PRJ00675,Healthcare Transformation 675,HSBC,Low,1279732,2024-05-25,2026-02-12,Completed,127
+PRJ00676,AI Transformation 676,Deloitte,Medium,4329724,2025-02-18,2026-02-20,Completed,53
+PRJ00677,Analytics Transformation 677,Deloitte,Low,7933345,2024-03-31,2026-01-29,Completed,132
+PRJ00678,Banking Transformation 678,Amazon,High,1370008,2026-06-18,2026-12-19,Active,448
+PRJ00679,Analytics Transformation 679,IBM,Low,4175576,2023-12-12,2025-10-16,Completed,95
+PRJ00680,Healthcare Transformation 680,Amazon,Low,7881557,2024-08-03,2026-02-01,Completed,75
+PRJ00681,Retail Transformation 681,Infosys,High,7945677,2025-04-03,2026-12-18,Active,362
+PRJ00682,ERP Transformation 682,Accenture,High,6410346,2025-11-20,2026-07-22,Completed,91
+PRJ00683,Banking Transformation 683,IBM,High,6119061,2025-11-19,2027-08-04,On Hold,419
+PRJ00684,Banking Transformation 684,IBM,High,4130991,2025-11-22,2027-07-07,On Hold,183
+PRJ00685,ERP Transformation 685,Deloitte,High,7538319,2026-04-09,2027-06-16,Active,245
+PRJ00686,AI Transformation 686,Amazon,Low,1816402,2025-05-15,2027-08-22,Active,371
+PRJ00687,Analytics Transformation 687,Google,High,6803451,2025-12-17,2027-06-23,Active,41
+PRJ00688,ERP Transformation 688,Amazon,Low,2368197,2026-04-13,2027-03-31,Active,136
+PRJ00689,Analytics Transformation 689,Oracle,High,4351164,2026-02-02,2027-05-07,Active,178
+PRJ00690,AI Transformation 690,Infosys,Medium,3151316,2025-10-25,2027-05-30,Active,126
+PRJ00691,AI Transformation 691,Deloitte,Medium,800580,2025-05-19,2025-12-03,Completed,132
+PRJ00692,Analytics Transformation 692,IBM,Low,5848057,2026-08-14,2026-11-28,Active,483
+PRJ00693,Banking Transformation 693,Infosys,Medium,3547937,2024-11-01,2025-11-27,Completed,52
+PRJ00694,Analytics Transformation 694,Infosys,Medium,5198885,2025-06-22,2027-02-04,Active,126
+PRJ00695,Banking Transformation 695,Accenture,Low,4296117,2025-10-11,2027-06-12,Active,607
+PRJ00696,ERP Transformation 696,Accenture,Low,7210154,2025-10-23,2026-04-23,Completed,35
+PRJ00697,Banking Transformation 697,Microsoft,High,1877035,2024-05-07,2025-11-20,Completed,83
+PRJ00698,AI Transformation 698,HSBC,Low,2143508,2025-06-20,2027-05-10,Active,1215
+PRJ00699,Retail Transformation 699,Oracle,Low,3334792,2024-12-21,2026-01-25,Completed,71
+PRJ00700,Banking Transformation 700,IBM,High,6977223,2025-06-01,2026-01-14,Completed,129
+PRJ00701,Healthcare Transformation 701,Google,Medium,536386,2025-12-23,2027-08-10,On Hold,206
+PRJ00702,Retail Transformation 702,IBM,Medium,4764205,2026-07-21,2027-07-23,Active,315
+PRJ00703,Banking Transformation 703,IBM,High,6627833,2025-05-05,2027-01-11,Active,62
+PRJ00704,Banking Transformation 704,IBM,Low,7904589,2026-06-22,2027-04-29,Active,208
+PRJ00705,Healthcare Transformation 705,Oracle,Medium,3837575,2024-06-01,2026-01-30,Completed,133
+PRJ00706,Retail Transformation 706,Google,High,3962359,2025-04-05,2027-03-12,On Hold,221
+PRJ00707,ERP Transformation 707,TCS,Medium,6471634,2025-05-18,2027-07-02,Active,28
+PRJ00708,Cloud Transformation 708,Oracle,High,5735897,2025-11-04,2027-09-01,Active,171
+PRJ00709,Banking Transformation 709,Google,Low,5953319,2025-08-28,2027-04-07,Active,289
+PRJ00710,Healthcare Transformation 710,Accenture,Low,1468089,2026-05-15,2027-06-27,On Hold,719
+PRJ00711,Healthcare Transformation 711,IBM,Low,6456948,2025-10-31,2027-06-15,Active,216
+PRJ00712,Analytics Transformation 712,Deloitte,High,4884976,2024-07-30,2025-11-14,Completed,102
+PRJ00713,AI Transformation 713,Amazon,High,2739576,2025-03-09,2026-01-31,Completed,69
+PRJ00714,Banking Transformation 714,HSBC,High,7541245,2026-05-24,2027-03-08,Active,113
+PRJ00715,Analytics Transformation 715,TCS,High,3508846,2025-02-21,2026-03-16,Completed,60
+PRJ00716,Analytics Transformation 716,TCS,High,6727809,2026-06-23,2027-08-24,Active,757
+PRJ00717,Healthcare Transformation 717,HSBC,Low,6074176,2026-01-27,2027-02-11,Active,215
+PRJ00718,Retail Transformation 718,Accenture,Low,951325,2024-07-04,2026-01-31,Completed,106
+PRJ00719,Healthcare Transformation 719,Infosys,High,5816603,2025-03-17,2026-04-08,Completed,155
+PRJ00720,Analytics Transformation 720,IBM,Low,6694567,2025-09-17,2027-04-19,Active,312
+PRJ00721,ERP Transformation 721,Infosys,High,6226557,2025-07-13,2027-01-20,Active,169
+PRJ00722,AI Transformation 722,Deloitte,High,4094584,2024-06-11,2026-05-18,Completed,140
+PRJ00723,Cloud Transformation 723,IBM,Medium,547354,2025-05-23,2026-04-01,Completed,109
+PRJ00724,Cloud Transformation 724,Accenture,Low,926606,2025-10-19,2026-05-27,Completed,63
+PRJ00725,Analytics Transformation 725,HSBC,Medium,7126230,2025-09-28,2027-08-24,Active,269
+PRJ00726,Analytics Transformation 726,Accenture,Low,2345175,2026-02-12,2026-11-19,Active,340
+PRJ00727,Analytics Transformation 727,TCS,High,3989084,2025-11-21,2026-11-16,On Hold,118
+PRJ00728,ERP Transformation 728,Oracle,High,6064452,2026-01-20,2026-11-29,Active,293
+PRJ00729,Cloud Transformation 729,IBM,Low,4483390,2024-10-19,2026-02-11,Completed,121
+PRJ00730,AI Transformation 730,Microsoft,Low,3402519,2025-06-19,2027-09-10,On Hold,128
+PRJ00731,Healthcare Transformation 731,IBM,High,834514,2025-05-08,2027-09-06,Active,163
+PRJ00732,Analytics Transformation 732,Microsoft,Medium,2652437,2026-03-03,2027-04-26,Active,304
+PRJ00733,Healthcare Transformation 733,Accenture,Low,7234514,2026-03-23,2026-10-25,Active,431
+PRJ00734,ERP Transformation 734,Oracle,Medium,4810861,2025-12-08,2026-11-04,Active,167
+PRJ00735,Analytics Transformation 735,TCS,Low,561493,2025-07-10,2026-06-26,Completed,54
+PRJ00736,Analytics Transformation 736,Oracle,Low,4058526,2026-04-29,2027-08-31,Active,338
+PRJ00737,Analytics Transformation 737,Deloitte,Low,7351432,2026-05-01,2027-07-15,Active,361
+PRJ00738,AI Transformation 738,Infosys,Low,3282630,2025-07-28,2026-12-30,On Hold,120
+PRJ00739,Cloud Transformation 739,HSBC,Low,1090911,2025-11-15,2026-07-08,Completed,124
+PRJ00740,Retail Transformation 740,Deloitte,Medium,5786645,2026-04-20,2027-02-22,Active,461
+PRJ00741,Retail Transformation 741,Microsoft,Low,549483,2025-08-21,2026-03-06,Completed,161
+PRJ00742,Analytics Transformation 742,IBM,High,6379424,2025-10-02,2026-11-14,Active,192
+PRJ00743,AI Transformation 743,HSBC,Low,3027912,2026-02-12,2027-06-27,Active,225
+PRJ00744,Retail Transformation 744,Deloitte,Low,758529,2026-03-23,2027-05-25,Active,378
+PRJ00745,Cloud Transformation 745,Deloitte,Low,2974458,2025-11-14,2027-02-02,Active,542
+PRJ00746,Banking Transformation 746,Accenture,High,5143297,2026-06-02,2027-03-14,On Hold,151
+PRJ00747,AI Transformation 747,Amazon,Low,5505103,2026-06-03,2026-12-15,On Hold,106
+PRJ00748,ERP Transformation 748,Oracle,Low,6719569,2025-02-13,2025-11-07,Completed,81
+PRJ00749,Retail Transformation 749,TCS,High,1850183,2026-02-19,2027-01-29,On Hold,384
+PRJ00750,Cloud Transformation 750,Microsoft,High,6128570,2024-07-22,2025-10-03,Completed,155
+PRJ00751,Analytics Transformation 751,TCS,Medium,5907921,2025-06-04,2026-11-09,Active,60
+PRJ00752,ERP Transformation 752,Microsoft,High,6586683,2026-03-19,2026-11-16,Active,338
+PRJ00753,ERP Transformation 753,Google,Low,5998505,2025-04-14,2027-03-31,Active,58
+PRJ00754,Cloud Transformation 754,Accenture,Medium,4280292,2025-07-14,2026-03-22,Completed,144
+PRJ00755,Healthcare Transformation 755,IBM,Medium,7275476,2025-04-09,2026-03-11,Completed,129
+PRJ00756,AI Transformation 756,Accenture,High,7090594,2025-01-20,2026-01-07,Completed,151
+PRJ00757,ERP Transformation 757,Accenture,High,6200731,2024-01-03,2025-09-20,Completed,98
+PRJ00758,Retail Transformation 758,Infosys,Medium,6999216,2025-05-22,2027-06-15,Active,340
+PRJ00759,Cloud Transformation 759,IBM,High,7561471,2025-01-18,2025-11-05,Completed,174
+PRJ00760,ERP Transformation 760,Microsoft,Low,1132500,2025-05-19,2026-06-04,Completed,138
+PRJ00761,Banking Transformation 761,Amazon,Low,5356171,2025-06-06,2027-06-29,On Hold,125
+PRJ00762,AI Transformation 762,TCS,Medium,5058951,2024-09-14,2025-10-16,Completed,53
+PRJ00763,Banking Transformation 763,Google,Medium,3792514,2025-11-11,2027-06-11,On Hold,461
+PRJ00764,Cloud Transformation 764,Infosys,Low,4781646,2024-06-27,2025-10-17,Completed,138
+PRJ00765,AI Transformation 765,Oracle,Low,6239163,2024-03-17,2026-02-09,Completed,124
+PRJ00766,Retail Transformation 766,Google,High,5250948,2025-01-05,2025-11-24,Completed,77
+PRJ00767,Banking Transformation 767,Infosys,Medium,839066,2025-09-11,2026-12-26,On Hold,115
+PRJ00768,AI Transformation 768,HSBC,Medium,2463090,2024-10-17,2025-12-08,Completed,141
+PRJ00769,Analytics Transformation 769,Accenture,Medium,4439912,2024-05-21,2026-05-01,Completed,139
+PRJ00770,AI Transformation 770,Accenture,High,6403367,2025-05-20,2026-11-05,On Hold,174
+PRJ00771,Analytics Transformation 771,HSBC,Low,5066339,2025-09-24,2027-03-02,On Hold,389
+PRJ00772,Retail Transformation 772,Accenture,Low,5980584,2026-02-03,2027-09-12,Active,274
+PRJ00773,ERP Transformation 773,Deloitte,High,4831640,2026-07-06,2027-07-04,On Hold,105
+PRJ00774,Analytics Transformation 774,Infosys,Low,555345,2024-04-12,2026-02-19,Completed,53
+PRJ00775,Cloud Transformation 775,Oracle,High,4816285,2026-06-04,2027-05-26,Active,160
+PRJ00776,Cloud Transformation 776,Google,Medium,5550112,2026-04-28,2026-12-28,Active,214
+PRJ00777,Retail Transformation 777,Accenture,Low,1450753,2026-06-15,2027-02-07,Active,112
+PRJ00778,Cloud Transformation 778,IBM,High,5929603,2025-12-12,2027-06-15,Active,257
+PRJ00779,AI Transformation 779,Google,Low,5468972,2026-08-03,2027-02-14,Active,504
+PRJ00780,AI Transformation 780,IBM,High,969023,2023-10-23,2025-09-26,Completed,40
+PRJ00781,Retail Transformation 781,IBM,Low,5848766,2024-06-04,2026-05-14,Completed,161
+PRJ00782,Cloud Transformation 782,Infosys,Low,4454502,2025-06-28,2026-03-22,Completed,117
+PRJ00783,Analytics Transformation 783,Deloitte,Low,1697156,2026-05-19,2027-02-02,On Hold,381
+PRJ00784,Healthcare Transformation 784,TCS,Medium,1906951,2025-06-20,2027-01-14,Active,599
+PRJ00785,Healthcare Transformation 785,IBM,High,2427817,2026-02-20,2027-06-02,Active,393
+PRJ00786,AI Transformation 786,Oracle,Low,7710777,2025-08-21,2026-06-08,Completed,148
+PRJ00787,Analytics Transformation 787,Google,Low,1307811,2025-08-29,2027-05-15,On Hold,216
+PRJ00788,Analytics Transformation 788,TCS,Low,6811447,2025-02-27,2025-10-04,Completed,87
+PRJ00789,Healthcare Transformation 789,TCS,High,7000084,2025-02-01,2025-12-11,Completed,69
+PRJ00790,Retail Transformation 790,Accenture,High,6352252,2026-01-06,2027-07-07,Active,93
+PRJ00791,Analytics Transformation 791,Deloitte,Medium,5441293,2026-04-19,2027-06-16,Active,34
+PRJ00792,AI Transformation 792,Deloitte,High,2635051,2025-05-07,2027-08-03,Active,382
+PRJ00793,ERP Transformation 793,IBM,Low,3927977,2026-04-17,2026-11-24,Active,228
+PRJ00794,Healthcare Transformation 794,TCS,High,4860078,2026-02-06,2026-08-12,Completed,156
+PRJ00795,Banking Transformation 795,Accenture,Medium,3538939,2024-08-19,2025-09-13,Completed,164
+PRJ00796,ERP Transformation 796,TCS,Medium,5236797,2024-10-26,2026-01-08,Completed,164
+PRJ00797,Analytics Transformation 797,Oracle,Medium,5131391,2024-08-17,2026-03-26,Completed,51
+PRJ00798,ERP Transformation 798,TCS,Low,4558074,2025-12-10,2027-01-12,Active,268
+PRJ00799,Analytics Transformation 799,Deloitte,Low,1658202,2024-09-24,2026-03-10,Completed,104
+PRJ00800,Banking Transformation 800,Oracle,Medium,7069196,2025-09-11,2026-12-12,Active,117
+PRJ00801,Cloud Transformation 801,TCS,Medium,7094126,2026-05-24,2026-12-03,Active,98
+PRJ00802,Cloud Transformation 802,Deloitte,Low,544381,2025-03-18,2025-11-06,Completed,149
+PRJ00803,Retail Transformation 803,IBM,Medium,1239377,2025-06-19,2026-12-26,Active,380
+PRJ00804,AI Transformation 804,IBM,High,6577502,2024-10-11,2026-04-23,Completed,141
+PRJ00805,ERP Transformation 805,IBM,High,6989498,2024-02-08,2026-01-21,Completed,50
+PRJ00806,Retail Transformation 806,Amazon,High,7635078,2025-09-21,2027-06-23,Active,132
+PRJ00807,ERP Transformation 807,Oracle,High,7076328,2025-06-29,2027-07-05,Active,220
+PRJ00808,Healthcare Transformation 808,Google,Low,802502,2025-11-23,2027-02-08,Active,247
+PRJ00809,Cloud Transformation 809,Microsoft,Medium,7040370,2025-03-17,2025-09-13,Completed,152
+PRJ00810,Healthcare Transformation 810,Oracle,Low,628903,2024-06-08,2026-01-24,Completed,106
+PRJ00811,Healthcare Transformation 811,HSBC,Low,7460571,2026-07-10,2026-11-28,Active,356
+PRJ00812,ERP Transformation 812,HSBC,High,5586544,2025-10-20,2027-04-09,Active,240
+PRJ00813,Healthcare Transformation 813,Amazon,Medium,1968298,2025-12-25,2027-05-07,On Hold,54
+PRJ00814,Healthcare Transformation 814,HSBC,Medium,1481542,2025-10-10,2026-06-21,Completed,68
+PRJ00815,Healthcare Transformation 815,IBM,Medium,6323303,2025-04-12,2027-02-21,Active,96
+PRJ00816,Retail Transformation 816,Oracle,Medium,7006194,2026-02-02,2027-07-28,Active,305
+PRJ00817,Analytics Transformation 817,Amazon,Medium,1475329,2025-12-22,2027-08-09,Active,106
+PRJ00818,Banking Transformation 818,Oracle,Medium,3959679,2024-12-22,2026-01-31,Completed,62
+PRJ00819,AI Transformation 819,HSBC,High,2909959,2025-11-23,2027-07-14,On Hold,158
+PRJ00820,Healthcare Transformation 820,Google,Medium,3132955,2025-06-08,2026-02-20,Completed,106
+PRJ00821,Cloud Transformation 821,Oracle,Medium,6683345,2024-07-27,2025-10-25,Completed,93
+PRJ00822,Cloud Transformation 822,Oracle,High,7503988,2025-01-17,2026-04-13,Completed,163
+PRJ00823,Cloud Transformation 823,Microsoft,High,1158401,2024-04-06,2025-10-02,Completed,139
+PRJ00824,Healthcare Transformation 824,Amazon,Low,854528,2025-09-09,2027-06-22,Active,189
+PRJ00825,ERP Transformation 825,Infosys,Low,7787761,2026-02-05,2027-08-26,Active,483
+PRJ00826,ERP Transformation 826,Deloitte,High,6792876,2024-06-09,2026-05-13,Completed,105
+PRJ00827,Analytics Transformation 827,Deloitte,Medium,5036290,2026-07-18,2027-07-09,Active,258
+PRJ00828,Analytics Transformation 828,Google,Medium,1509721,2024-07-15,2026-02-18,Completed,175
+PRJ00829,Banking Transformation 829,Amazon,High,6154786,2025-12-22,2027-03-23,Active,545
+PRJ00830,ERP Transformation 830,Accenture,Low,7729654,2025-01-11,2025-10-21,Completed,42
+PRJ00831,Cloud Transformation 831,HSBC,Medium,5642921,2024-08-15,2025-11-07,Completed,171
+PRJ00832,Retail Transformation 832,Oracle,Medium,6378003,2024-06-21,2026-05-12,Completed,49
+PRJ00833,ERP Transformation 833,Infosys,High,5293332,2026-02-09,2027-05-06,Active,271
+PRJ00834,Analytics Transformation 834,Microsoft,Low,2764497,2024-09-05,2025-10-24,Completed,41
+PRJ00835,Analytics Transformation 835,Deloitte,High,1723425,2025-11-03,2027-05-22,Active,415
+PRJ00836,Retail Transformation 836,Amazon,High,4035971,2025-08-01,2026-12-28,Active,869
+PRJ00837,Healthcare Transformation 837,TCS,Low,3148512,2025-03-23,2027-08-31,Active,243
+PRJ00838,Healthcare Transformation 838,IBM,High,3842037,2026-03-14,2027-02-18,Active,122
+PRJ00839,Cloud Transformation 839,HSBC,Medium,7537804,2025-09-24,2026-05-23,Completed,161
+PRJ00840,ERP Transformation 840,Accenture,Medium,5200556,2025-12-27,2027-04-02,Active,89
+PRJ00841,ERP Transformation 841,Amazon,Medium,1517013,2025-06-26,2027-02-21,Active,263
+PRJ00842,Healthcare Transformation 842,IBM,Low,5945305,2024-09-20,2025-10-08,Completed,57
+PRJ00843,ERP Transformation 843,Accenture,Low,4781919,2025-03-31,2027-03-07,Active,457
+PRJ00844,AI Transformation 844,Deloitte,Low,2903533,2025-08-02,2027-05-29,Active,239
+PRJ00845,Analytics Transformation 845,Google,Low,7275622,2025-04-12,2026-12-26,Active,254
+PRJ00846,Healthcare Transformation 846,IBM,Medium,7621095,2026-01-11,2027-09-01,On Hold,163
+PRJ00847,ERP Transformation 847,Oracle,Medium,3158167,2026-07-05,2027-01-03,On Hold,77
+PRJ00848,Healthcare Transformation 848,Deloitte,Medium,7946498,2025-08-16,2027-02-26,Active,202
+PRJ00849,Banking Transformation 849,IBM,Low,4277295,2025-05-30,2027-04-16,Active,427
+PRJ00850,Cloud Transformation 850,Oracle,Low,2610968,2025-10-21,2026-05-12,Completed,160
+PRJ00851,Cloud Transformation 851,Google,Medium,1364104,2025-08-21,2026-11-22,On Hold,212
+PRJ00852,AI Transformation 852,Deloitte,Low,6917254,2025-04-24,2025-12-15,Completed,138
+PRJ00853,Healthcare Transformation 853,Google,High,5993134,2026-06-22,2027-02-24,On Hold,221
+PRJ00854,Cloud Transformation 854,Oracle,Low,2883835,2026-01-27,2027-03-20,On Hold,745
+PRJ00855,Healthcare Transformation 855,Google,High,794901,2026-06-11,2026-12-19,Active,29
+PRJ00856,Analytics Transformation 856,Infosys,Medium,7805624,2025-05-31,2027-03-28,Active,366
+PRJ00857,Retail Transformation 857,Google,Low,5023872,2026-03-28,2027-07-20,Active,268
+PRJ00858,Banking Transformation 858,IBM,Medium,4891099,2024-01-05,2025-10-13,Completed,135
+PRJ00859,ERP Transformation 859,Infosys,Low,2405291,2025-11-14,2027-03-20,Active,94
+PRJ00860,ERP Transformation 860,Deloitte,Medium,1806253,2025-12-31,2027-03-19,Active,386
+PRJ00861,Analytics Transformation 861,Google,Medium,2905536,2024-08-29,2026-08-14,Completed,54
+PRJ00862,Analytics Transformation 862,Infosys,Medium,576609,2026-08-10,2027-06-21,Active,433
+PRJ00863,Healthcare Transformation 863,Oracle,High,5098737,2025-07-02,2027-03-11,Active,115
+PRJ00864,Retail Transformation 864,Oracle,High,6497334,2024-04-29,2026-01-16,Completed,148
+PRJ00865,Cloud Transformation 865,HSBC,High,4042000,2026-01-27,2027-04-24,Active,127
+PRJ00866,Analytics Transformation 866,HSBC,Medium,5939651,2025-11-23,2027-08-22,Active,141
+PRJ00867,Retail Transformation 867,Oracle,High,2030142,2025-06-26,2027-02-27,Active,255
+PRJ00868,Healthcare Transformation 868,Infosys,Medium,6375990,2024-09-11,2026-06-19,Completed,175
+PRJ00869,AI Transformation 869,Google,High,4987659,2026-05-10,2027-03-26,Active,463
+PRJ00870,ERP Transformation 870,Google,Low,4177705,2025-03-12,2026-06-23,Completed,94
+PRJ00871,Cloud Transformation 871,Amazon,Medium,2321905,2026-04-17,2026-11-28,Active,450
+PRJ00872,ERP Transformation 872,Infosys,Low,7138951,2024-04-17,2026-03-08,Completed,120
+PRJ00873,AI Transformation 873,HSBC,Medium,1098818,2025-08-09,2026-07-04,Completed,95
+PRJ00874,Analytics Transformation 874,HSBC,Medium,7447881,2026-05-14,2027-01-19,Active,362
+PRJ00875,Analytics Transformation 875,Infosys,High,6687596,2024-09-12,2026-04-09,Completed,179
+PRJ00876,Banking Transformation 876,Microsoft,Low,6086879,2026-05-05,2027-06-05,On Hold,106
+PRJ00877,Banking Transformation 877,HSBC,Medium,1830529,2025-12-15,2027-04-30,On Hold,94
+PRJ00878,Healthcare Transformation 878,Microsoft,Medium,4536846,2026-07-24,2027-07-21,Active,140
+PRJ00879,AI Transformation 879,Oracle,High,2479424,2026-05-05,2027-04-15,Active,45
+PRJ00880,Cloud Transformation 880,HSBC,Low,1503693,2026-03-01,2026-10-20,Active,566
+PRJ00881,AI Transformation 881,IBM,Low,4486859,2025-10-05,2026-04-12,Completed,50
+PRJ00882,Analytics Transformation 882,Microsoft,High,1822870,2026-05-27,2027-04-21,Active,42
+PRJ00883,ERP Transformation 883,Amazon,High,3482298,2025-08-28,2027-08-25,Active,316
+PRJ00884,Analytics Transformation 884,Microsoft,High,4592322,2025-08-20,2027-07-14,Active,168
+PRJ00885,Analytics Transformation 885,Infosys,Low,2118710,2024-05-16,2025-11-02,Completed,158
+PRJ00886,Banking Transformation 886,Google,Medium,831253,2024-08-05,2026-02-02,Completed,34
+PRJ00887,ERP Transformation 887,TCS,Low,4611189,2026-01-02,2027-07-26,Active,455
+PRJ00888,ERP Transformation 888,Infosys,Medium,7778475,2024-11-21,2026-05-11,Completed,59
+PRJ00889,Cloud Transformation 889,Microsoft,Low,1800447,2025-05-03,2027-07-23,Active,266
+PRJ00890,Healthcare Transformation 890,Accenture,Medium,506038,2025-06-21,2027-02-24,Active,239
+PRJ00891,Banking Transformation 891,Google,High,5698710,2025-11-28,2027-04-25,Active,255
+PRJ00892,Cloud Transformation 892,Accenture,Low,1031349,2025-07-13,2027-08-26,Active,278
+PRJ00893,Cloud Transformation 893,TCS,Low,4673744,2025-11-12,2027-04-29,Active,277
+PRJ00894,ERP Transformation 894,Accenture,Medium,5876291,2026-05-28,2027-08-22,Active,460
+PRJ00895,Banking Transformation 895,Microsoft,High,7506109,2024-07-11,2026-06-26,Completed,148
+PRJ00896,Cloud Transformation 896,Microsoft,Medium,2107396,2026-05-15,2026-10-29,On Hold,231
+PRJ00897,Banking Transformation 897,Infosys,Low,5734243,2024-03-28,2025-10-26,Completed,75
+PRJ00898,ERP Transformation 898,Oracle,Low,6521721,2026-04-05,2026-11-07,Active,228
+PRJ00899,Analytics Transformation 899,Microsoft,Medium,7219442,2024-06-16,2026-04-30,Completed,76
+PRJ00900,Banking Transformation 900,Deloitte,Medium,7162648,2026-02-11,2027-07-25,Active,119
+PRJ00901,ERP Transformation 901,TCS,High,6659757,2025-06-19,2027-08-24,Active,481
+PRJ00902,Cloud Transformation 902,TCS,High,1349137,2025-06-26,2026-03-12,Completed,130
+PRJ00903,Cloud Transformation 903,Oracle,Low,6010279,2025-11-15,2027-04-28,Active,113
+PRJ00904,Healthcare Transformation 904,TCS,Medium,6758810,2024-09-30,2025-09-28,Completed,41
+PRJ00905,Banking Transformation 905,Infosys,Low,6080457,2024-03-25,2025-09-22,Completed,51
+PRJ00906,Analytics Transformation 906,Google,Low,3868505,2025-07-07,2026-06-22,Completed,136
+PRJ00907,Healthcare Transformation 907,IBM,Medium,3455508,2025-09-12,2027-01-01,Active,172
+PRJ00908,Analytics Transformation 908,Accenture,Medium,6910443,2025-11-06,2027-03-28,On Hold,460
+PRJ00909,Healthcare Transformation 909,Oracle,Low,5077044,2025-06-18,2027-03-27,Active,251
+PRJ00910,ERP Transformation 910,Infosys,Medium,3831037,2024-08-23,2025-11-06,Completed,106
+PRJ00911,Healthcare Transformation 911,Amazon,Low,1633181,2025-04-13,2026-07-28,Completed,110
+PRJ00912,ERP Transformation 912,Oracle,High,7678303,2026-03-13,2026-10-16,On Hold,275
+PRJ00913,Healthcare Transformation 913,IBM,Low,1797841,2024-04-22,2026-03-26,Completed,180
+PRJ00914,Cloud Transformation 914,Google,Medium,3579314,2024-06-26,2025-12-22,Completed,146
+PRJ00915,ERP Transformation 915,HSBC,High,5285593,2026-04-09,2027-02-09,On Hold,290
+PRJ00916,Banking Transformation 916,Accenture,Medium,1950411,2025-08-09,2026-04-25,Completed,145
+PRJ00917,Analytics Transformation 917,Microsoft,Low,5887622,2025-05-11,2027-08-04,Active,62
+PRJ00918,AI Transformation 918,Amazon,Medium,3418650,2024-04-01,2025-10-23,Completed,97
+PRJ00919,Analytics Transformation 919,Microsoft,High,6771983,2026-01-04,2027-05-14,On Hold,307
+PRJ00920,Banking Transformation 920,Deloitte,High,3056708,2025-10-10,2026-10-18,Active,370
+PRJ00921,Healthcare Transformation 921,Google,Medium,4714450,2026-03-04,2027-07-16,Active,161
+PRJ00922,Banking Transformation 922,Deloitte,Medium,6815281,2026-05-28,2026-11-07,Active,307
+PRJ00923,Cloud Transformation 923,Deloitte,Medium,7096535,2025-11-29,2026-11-28,Active,194
+PRJ00924,AI Transformation 924,Infosys,Low,6752155,2024-12-31,2026-06-08,Completed,117
+PRJ00925,AI Transformation 925,Deloitte,Low,4144775,2024-10-31,2026-01-22,Completed,77
+PRJ00926,Retail Transformation 926,TCS,High,4592475,2026-06-09,2026-12-21,Active,303
+PRJ00927,Healthcare Transformation 927,IBM,Low,4897709,2024-10-11,2025-10-26,Completed,84
+PRJ00928,Analytics Transformation 928,Deloitte,Medium,6243998,2025-04-13,2026-07-09,Completed,77
+PRJ00929,Banking Transformation 929,Deloitte,Medium,3564087,2026-06-30,2026-12-09,On Hold,330
+PRJ00930,Healthcare Transformation 930,Amazon,Medium,1919816,2024-09-17,2026-03-03,Completed,50
+PRJ00931,Healthcare Transformation 931,Google,Medium,876460,2025-10-03,2027-05-27,On Hold,221
+PRJ00932,Banking Transformation 932,Accenture,High,6856331,2026-04-17,2027-01-23,On Hold,214
+PRJ00933,Banking Transformation 933,Amazon,High,5709346,2026-07-02,2026-12-09,Active,145
+PRJ00934,AI Transformation 934,Accenture,Low,7246796,2025-05-27,2027-03-09,On Hold,172
+PRJ00935,AI Transformation 935,Accenture,High,6707678,2024-03-05,2025-12-27,Completed,96
+PRJ00936,Healthcare Transformation 936,HSBC,Low,4551918,2026-05-02,2027-07-19,Active,380
+PRJ00937,Banking Transformation 937,Amazon,Medium,5390599,2025-03-24,2026-12-24,Active,92
+PRJ00938,ERP Transformation 938,Google,High,2882478,2025-11-18,2026-11-04,On Hold,276
+PRJ00939,AI Transformation 939,Infosys,Low,569912,2024-07-02,2025-10-02,Completed,57
+PRJ00940,Analytics Transformation 940,Microsoft,High,2953630,2024-09-27,2026-03-29,Completed,141
+PRJ00941,Cloud Transformation 941,Deloitte,Low,6453301,2025-09-16,2027-04-28,On Hold,354
+PRJ00942,Analytics Transformation 942,IBM,Low,1238370,2024-04-29,2026-03-06,Completed,166
+PRJ00943,Healthcare Transformation 943,Amazon,High,2575275,2024-02-22,2025-12-01,Completed,34
+PRJ00944,Retail Transformation 944,Deloitte,Low,1817055,2026-03-11,2027-04-01,On Hold,263
+PRJ00945,Banking Transformation 945,HSBC,High,4704802,2024-08-21,2026-02-15,Completed,31
+PRJ00946,Retail Transformation 946,Amazon,Low,2850436,2025-04-27,2026-07-14,Completed,131
+PRJ00947,Banking Transformation 947,Google,High,6622758,2024-07-19,2026-02-21,Completed,59
+PRJ00948,Retail Transformation 948,Oracle,Low,1781352,2024-08-19,2025-10-05,Completed,33
+PRJ00949,Retail Transformation 949,TCS,High,2234405,2024-10-07,2026-03-08,Completed,73
+PRJ00950,Banking Transformation 950,Oracle,High,3092066,2025-10-21,2027-07-17,Active,37
+PRJ00951,Cloud Transformation 951,Deloitte,High,6004870,2025-05-11,2027-07-08,Active,39
+PRJ00952,ERP Transformation 952,Microsoft,Low,4970805,2025-05-02,2027-01-01,On Hold,295
+PRJ00953,ERP Transformation 953,Google,Low,747324,2026-06-15,2027-01-15,On Hold,84
+PRJ00954,Retail Transformation 954,HSBC,Medium,6754627,2025-05-21,2027-05-12,Active,382
+PRJ00955,Banking Transformation 955,HSBC,High,7035630,2025-05-14,2027-09-04,On Hold,254
+PRJ00956,AI Transformation 956,IBM,Low,2738605,2025-06-04,2026-06-08,Completed,152
+PRJ00957,Healthcare Transformation 957,Oracle,High,6266143,2025-10-05,2027-02-08,Active,362
+PRJ00958,Cloud Transformation 958,TCS,Low,4432273,2024-09-05,2026-07-05,Completed,147
+PRJ00959,Analytics Transformation 959,Deloitte,Medium,4474916,2026-02-04,2027-01-15,Active,167
+PRJ00960,AI Transformation 960,Deloitte,High,2763738,2025-03-23,2026-05-08,Completed,133
+PRJ00961,Analytics Transformation 961,Oracle,High,1985439,2026-04-23,2027-01-24,On Hold,129
+PRJ00962,Analytics Transformation 962,IBM,Medium,6270210,2025-03-28,2027-05-25,On Hold,154
+PRJ00963,Retail Transformation 963,Deloitte,High,5599686,2024-10-17,2025-12-23,Completed,154
+PRJ00964,Retail Transformation 964,IBM,Low,5297733,2026-02-01,2027-03-22,Active,296
+PRJ00965,Banking Transformation 965,Amazon,Low,1417011,2025-11-19,2027-09-06,Active,330
+PRJ00966,Cloud Transformation 966,TCS,Low,3818627,2025-06-17,2026-11-03,Active,408
+PRJ00967,Retail Transformation 967,TCS,Low,913520,2026-07-25,2027-07-25,On Hold,308
+PRJ00968,ERP Transformation 968,HSBC,Medium,1896590,2024-05-24,2026-01-01,Completed,107
+PRJ00969,Banking Transformation 969,TCS,High,4388782,2025-02-12,2025-10-05,Completed,122
+PRJ00970,Banking Transformation 970,TCS,High,2008031,2025-12-26,2026-11-28,Active,292
+PRJ00971,Cloud Transformation 971,Deloitte,Medium,3213386,2025-04-21,2027-07-19,Active,221
+PRJ00972,Healthcare Transformation 972,Oracle,Medium,1256481,2026-05-15,2027-06-02,Active,74
+PRJ00973,Banking Transformation 973,Microsoft,High,1457684,2024-10-04,2025-09-16,Completed,131
+PRJ00974,AI Transformation 974,TCS,Low,3721958,2025-09-24,2027-04-16,Active,258
+PRJ00975,Healthcare Transformation 975,Google,Medium,5116635,2025-04-02,2027-07-01,Active,359
+PRJ00976,Healthcare Transformation 976,Google,High,7788178,2024-12-12,2026-05-19,Completed,107
+PRJ00977,ERP Transformation 977,HSBC,Low,6947739,2024-11-17,2026-07-19,Completed,52
+PRJ00978,Cloud Transformation 978,Microsoft,High,2201643,2026-03-20,2027-08-29,On Hold,215
+PRJ00979,Retail Transformation 979,Infosys,Medium,5059218,2025-09-27,2026-04-07,Completed,62
+PRJ00980,Cloud Transformation 980,Oracle,Low,6032040,2025-10-07,2027-06-22,Active,264
+PRJ00981,AI Transformation 981,IBM,Low,555138,2026-01-17,2027-05-27,Active,281
+PRJ00982,Healthcare Transformation 982,TCS,High,910360,2024-07-31,2025-11-07,Completed,64
+PRJ00983,AI Transformation 983,Google,High,6095172,2025-01-26,2026-07-17,Completed,33
+PRJ00984,ERP Transformation 984,Microsoft,High,1413415,2025-10-10,2027-03-14,Active,332
+PRJ00985,Banking Transformation 985,HSBC,Low,6044237,2025-06-04,2026-05-15,Completed,78
+PRJ00986,Analytics Transformation 986,TCS,High,4319650,2025-10-14,2027-08-02,Active,122
+PRJ00987,AI Transformation 987,HSBC,Medium,3591784,2026-02-11,2026-10-31,Active,357
+PRJ00988,Analytics Transformation 988,Deloitte,Low,1044637,2025-06-21,2026-11-16,On Hold,339
+PRJ00989,Banking Transformation 989,HSBC,Medium,4921238,2025-08-07,2026-06-07,Completed,58
+PRJ00990,Healthcare Transformation 990,Amazon,High,5292974,2025-03-31,2026-04-29,Completed,34
+PRJ00991,AI Transformation 991,Infosys,Low,6276850,2025-09-26,2027-07-10,Active,615
+PRJ00992,Retail Transformation 992,IBM,Medium,2678186,2025-07-07,2027-03-09,Active,65
+PRJ00993,ERP Transformation 993,Google,Low,5219718,2025-03-23,2027-08-28,Active,237
+PRJ00994,Retail Transformation 994,Infosys,High,7912708,2025-08-06,2027-09-01,Active,439
+PRJ00995,Cloud Transformation 995,Amazon,High,701215,2025-08-17,2027-03-10,Active,634
+PRJ00996,Banking Transformation 996,Oracle,Low,3978186,2025-07-03,2026-12-12,Active,336
+PRJ00997,Healthcare Transformation 997,Oracle,High,5873895,2024-09-05,2026-02-25,Completed,78
+PRJ00998,Analytics Transformation 998,Microsoft,Medium,3018964,2025-01-07,2026-03-23,Completed,36
+PRJ00999,AI Transformation 999,Accenture,Medium,3822302,2026-03-02,2026-10-16,Active,154
+PRJ01000,Analytics Transformation 1000,Google,High,3272559,2025-10-03,2026-10-27,Active,112
