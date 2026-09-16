@@ -1,11 +1,9 @@
 import os
-import random
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-import streamlit.components.v1 as components
 from dotenv import load_dotenv
 
 from backend.analytics_service import build_warehouse_analytics
@@ -27,11 +25,6 @@ from frontend.ui import get_dashboard_counts, render_hero, render_sidebar
 load_dotenv()
 
 
-try:
-    from streamlit_autorefresh import st_autorefresh
-except ModuleNotFoundError:
-    st_autorefresh = None
-
 st.set_page_config(page_title="HR Analytics Command Center", layout="wide")
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
@@ -41,8 +34,6 @@ if flash_message:
 
 if "db_ready" not in st.session_state:
     st.session_state["db_ready"] = False
-if "live_mode" not in st.session_state:
-    st.session_state["live_mode"] = False
 if "kpi_history" not in st.session_state:
     # rolling sparkline history per metric, seeded on first load
     st.session_state["kpi_history"] = {"employees": [], "projects": [], "reviews": []}
@@ -71,7 +62,7 @@ except Exception:
 
 
 
-selected_department, selected_year = render_sidebar(history_df, review_df, st_autorefresh)
+selected_department, selected_year = render_sidebar(history_df, review_df, warehouse_review_df)
 
 hero_counts = get_dashboard_counts(raw_df, review_df, history_df)
 hero_team_count = hero_counts["teams"]
@@ -80,21 +71,10 @@ hero_review_count = hero_counts["reviews"]
 
 render_hero(hero_team_count, hero_project_count, hero_review_count)
 
-# ----------------------------------------------------------------------------
-# KPIs -- animated count-up + sparkline. Values jitter slightly each refresh
-# only when Live pulse is on and no real database is connected.
-# ----------------------------------------------------------------------------
 base_employee_count = history_df["employee_id"].nunique()
 base_review_count = len(review_df)
 base_project_count = hero_project_count or 250
-
-simulate = st.session_state["live_mode"] and not st.session_state["db_ready"]
-if simulate:
-    employee_count = base_employee_count + random.randint(-6, 9)
-    project_count = base_project_count + random.randint(-2, 3)
-    review_count = base_review_count + random.randint(-20, 35)
-else:
-    employee_count, project_count, review_count = base_employee_count, base_project_count, base_review_count
+employee_count, project_count, review_count = base_employee_count, base_project_count, base_review_count
 
 if st.session_state["selected_nav"] == "Overview":
     render_overview(

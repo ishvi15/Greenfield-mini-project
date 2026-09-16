@@ -10,13 +10,25 @@ import pandas as pd
 class EmployeeHistorySynthesizer:
     """Build a project-ready HR history dataset from the raw IBM attrition CSV."""
 
-    source_path: str | Path = "data/raw_data/WA_Fn-UseC_-HR-Employee-Attrition.csv"
+    source_path: str | Path = "data/raw/WA_Fn-UseC_-HR-Employee-Attrition.csv"
+
+    def _resolve_source_path(self) -> Path:
+        project_root = Path(__file__).resolve().parents[2]
+        requested = Path(self.source_path)
+        candidates = [requested]
+        if not requested.is_absolute():
+            candidates.extend([
+                project_root / requested,
+                project_root / "data/raw" / requested.name,
+                project_root / "data/raw_data" / requested.name,
+            ])
+        for candidate in candidates:
+            if candidate.exists():
+                return candidate
+        raise FileNotFoundError(f"IBM HR dataset not found. Checked: {candidates}")
 
     def load_raw_data(self) -> pd.DataFrame:
-        path = Path(self.source_path)
-        if not path.exists():
-            raise FileNotFoundError(f"IBM HR dataset not found: {path}")
-
+        path = self._resolve_source_path()
         df = pd.read_csv(path)
         required = {"EmployeeNumber", "Department", "YearsAtCompany", "PerformanceRating"}
         missing = required - set(df.columns)

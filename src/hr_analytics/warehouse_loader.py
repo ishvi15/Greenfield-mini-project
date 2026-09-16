@@ -12,6 +12,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def _normalize_review_score(value: object) -> float:
+    numeric = float(value)
+    if numeric <= 0:
+        return 0.0
+    if numeric <= 4:
+        return (numeric / 4) * 100
+    if numeric <= 5:
+        return (numeric / 5) * 100
+    return min(max(numeric, 0), 100)
+
+
 class WarehouseLoader:
     def __init__(self, connection: Any | None = None):
         self.connection = connection
@@ -242,19 +253,20 @@ class WarehouseLoader:
             if employee_id is None:
                 employee_id = int(employee_reference.replace("EMP", "").lstrip("0") or "0")
             review_date = pd.Timestamp(row["ReviewDate"]).date()
-            score = float(row["PerformanceScore"])
+            normalized_score = _normalize_review_score(row["PerformanceScore"])
             rating = str(row.get("PerformanceRating", ""))
+            department_name = str(employees.loc[employees["EmployeeNumber"] == employee_id, "Department"].iloc[0])
             review_rows.append(
                 (
                     employee_keys[employee_id],
                     date_keys[review_date],
                     int(str(row["ReviewID"]).replace("REV", "").lstrip("0") or "0"),
-                    score,
-                    str(employees.loc[employees["EmployeeNumber"] == employee_id, "Department"].iloc[0]),
+                    normalized_score,
+                    department_name,
                     rating,
                     review_date.year,
                     None,
-                    str(employees.loc[employees["EmployeeNumber"] == employee_id, "Department"].iloc[0]),
+                    department_name,
                     None,
                 )
             )

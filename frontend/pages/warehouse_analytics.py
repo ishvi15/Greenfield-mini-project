@@ -28,20 +28,19 @@ def render_warehouse_analytics(warehouse_review_df, selected_department, selecte
         if performance_df.empty:
             st.info("No performance records match the selected filter.")
         else:
-            perf_fig = px.line(
+            performance_df["year"] = performance_df["year"].astype(str)
+            perf_fig = px.bar(
                 performance_df,
                 x="year",
                 y="avg_score",
-                markers=True,
+                text_auto=".1f",
                 color_discrete_sequence=["#2563eb"],
             )
             perf_fig.update_traces(
-                line={"width": 3, "color": "#2563eb"},
-                marker={"size": 9, "color": "#06b6d4", "line": {"width": 2, "color": "#ecfeff"}},
-                fill="tozeroy",
-                fillcolor="rgba(37, 99, 235, 0.12)",
+                marker_line_width=0,
+                textfont={"color": "#173d39", "size": 11},
             )
-            style_chart(perf_fig, "Year-over-year performance trend", "Average score", "Year")
+            style_chart(perf_fig, "Average performance by year", "Average score", "Year")
             st.plotly_chart(perf_fig, width="stretch")
 
     with analytics_tab[1]:

@@ -1,10 +1,7 @@
 DEPARTMENTS = (
-    "Engineering",
-    "People",
-    "Finance",
+    "Research & Development",
     "Sales",
-    "Operations",
-    "Marketing",
+    "Human Resources",
 )
 
 DEPARTMENT_ALIASES = {
@@ -13,9 +10,17 @@ DEPARTMENT_ALIASES = {
     "research and development": "Research & Development",
     "research & development": "Research & Development",
     "human resources": "Human Resources",
+    "people": "Human Resources",
+    "engineering": "Research & Development",
+    "finance": "Research & Development",
+    "operations": "Research & Development",
+    "marketing": "Sales",
 }
 
 
 def normalize_department(value: object) -> str:
     department = " ".join(str(value).split()).strip()
-    return DEPARTMENT_ALIASES.get(department.casefold(), department)
+    normalized = DEPARTMENT_ALIASES.get(department.casefold(), department)
+    if normalized not in DEPARTMENTS:
+        return department
+    return normalized

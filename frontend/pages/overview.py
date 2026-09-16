@@ -20,6 +20,10 @@ def render_overview(
     review_count,
 ):
     if st.session_state["selected_nav"] == "Overview":
+        display_raw_df = raw_df.copy()
+        if selected_department != "All" and "Department" in display_raw_df.columns:
+            display_raw_df = display_raw_df[display_raw_df["Department"] == selected_department]
+
         col1, col2, col3 = st.columns(3)
         with col1:
             animated_kpi_card("Employees", employee_count, "Active employee cohort", "employees")
@@ -28,8 +32,8 @@ def render_overview(
         with col3:
             animated_kpi_card("Performance Reviews", review_count, "Captured review records", "reviews")
 
-        attrition_rate = float(raw_df["Attrition"].eq("Yes").mean() * 100)
-        executive_metrics = calculate_executive_metrics(raw_df)
+        attrition_rate = float(display_raw_df["Attrition"].eq("Yes").mean() * 100)
+        executive_metrics = calculate_executive_metrics(display_raw_df)
         avg_income = executive_metrics["avg_income"]
         avg_tenure = executive_metrics["avg_tenure"]
         avg_age = executive_metrics["avg_age"]
@@ -61,7 +65,7 @@ def render_overview(
         chart_col1, chart_col2 = st.columns(2)
         with chart_col1:
             dept_perf = (
-                raw_df.groupby("Department")["PerformanceRating"]
+                display_raw_df.groupby("Department")["PerformanceRating"]
                 .mean()
                 .reindex(DEPARTMENTS, fill_value=0)
                 .rename("avg_performance_rating")
@@ -82,7 +86,7 @@ def render_overview(
 
         with chart_col2:
             dept_attrition = (
-                raw_df.groupby("Department")["Attrition"]
+                display_raw_df.groupby("Department")["Attrition"]
                 .apply(lambda s: (s == "Yes").mean() * 100)
                 .reindex(DEPARTMENTS, fill_value=0)
                 .rename("attrition_rate")
@@ -103,7 +107,7 @@ def render_overview(
             st.plotly_chart(attrition_chart, width="stretch")
 
         age_hist = px.histogram(
-            raw_df,
+            display_raw_df,
             x="Age",
             nbins=20,
             color_discrete_sequence=["#06b6d4"],

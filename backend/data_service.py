@@ -51,6 +51,48 @@ def _warehouse_database(cursor, connection) -> str:
     raise ValueError("No database with the required warehouse tables was found.")
 
 
+def _normalize_performance_values(values: pd.Series) -> pd.Series:
+    """Normalize raw review scores to a 0-100 scale for analytics.
+
+    Generated review datasets and IBM performance ratings can arrive as:
+    - 1-4 scales (1=25, 2=50, 3=75, 4=100)
+    - 1-5 scales (e.g. 4.4, 4.8, 5.0 as percentages on a 5-point scale)
+    - already-normalized 0-100 values
+    """
+    normalized = pd.to_numeric(values, errors="coerce")
+    if normalized.empty:
+        return normalized
+
+    max_value = float(normalized.max())
+    if pd.notna(max_value) and max_value > 0:
+        if max_value <= 4:
+            return (normalized / 4 * 100).clip(0, 100)
+        if max_value <= 5:
+            return (normalized / 5 * 100).clip(0, 100)
+
+    return normalized.clip(0, 100)
+
+
+def _load_raw_truth_dataset() -> pd.DataFrame:
+    """Load the canonical IBM Attrition source file used by the dashboard metrics."""
+    raw_path = _resolve_project_data_file(
+        "data/raw/WA_Fn-UseC_-HR-Employee-Attrition.csv",
+        "data/raw_data/WA_Fn-UseC_-HR-Employee-Attrition.csv",
+        "data/WA_Fn-UseC_-HR-Employee-Attrition.csv",
+    )
+    if not raw_path.exists():
+        return pd.DataFrame()
+
+    df = pd.read_csv(raw_path)
+    if "EmployeeNumber" not in df.columns and "EmployeeID" in df.columns:
+        df = df.rename(columns={"EmployeeID": "EmployeeNumber"})
+    if "PerformanceRating" in df.columns:
+        df["PerformanceRating"] = _normalize_performance_values(df["PerformanceRating"])
+    if "Department" in df.columns:
+        df["Department"] = df["Department"].map(normalize_department)
+    return df
+
+
 @st.cache_data(show_spinner="Loading HR analytics data...")
 def ensure_demo_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """Load and transform the bundled IBM HR dataset for demo/fallback use."""
@@ -102,6 +144,7 @@ def ensure_demo_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         else:
             raw_df["YearsAtCompany"] = 0
 
+    raw_df["PerformanceRating"] = _normalize_performance_values(raw_df["PerformanceRating"])
     history_df = raw_df[
         ["EmployeeNumber", "Department", "YearsAtCompany", "PerformanceRating"]
     ].copy()
@@ -113,6 +156,7 @@ def ensure_demo_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
             "PerformanceRating": "performance_score",
         }
     )
+    history_df["department"] = history_df["department"].map(normalize_department)
     history_df["review_date"] = pd.to_datetime(
         2024 - history_df["years_at_company"].astype(int), format="%Y"
     )
@@ -171,6 +215,7 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     review_df["review_date"] = pd.to_datetime(
         review_df["review_date"]
     ).dt.strftime("%Y-%m-%d")
+    review_df["performance_score"] = _normalize_performance_values(review_df["performance_score"])
     review_df["department"] = review_df["department"].map(normalize_department)
     history_df = review_df[
         ["employee_id", "department", "review_date", "performance_score"]
@@ -204,30 +249,50 @@ def load_live_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     raw_df = employee_df[
         ["employee_id", "department", "role_name", "salary", "hire_date"]
     ].copy()
-    raw_df["PerformanceRating"] = pd.to_numeric(
-        review_df["performance_score"].head(len(raw_df)), errors="coerce"
-    ).fillna(70)
-    raw_df["YearsAtCompany"] = (
-        (
-            pd.Timestamp.now().normalize()
-            - pd.to_datetime(raw_df["hire_date"])
-        ) / pd.Timedelta(days=365)
-    ).round(1)
-    raw_df["Attrition"] = "No"
-    raw_df["Age"] = 35
-    raw_df["MonthlyIncome"] = pd.to_numeric(
-        raw_df["salary"], errors="coerce"
-    ).fillna(0)
-    raw_df = raw_df.rename(
-        columns={"employee_id": "EmployeeNumber", "department": "Department"}
-    )
-    raw_df["Department"] = raw_df["Department"].map(normalize_department)
-    raw_df = raw_df[
-        [
-            "EmployeeNumber", "Department", "YearsAtCompany",
-            "PerformanceRating", "MonthlyIncome", "Attrition", "Age"
+    truth_df = _load_raw_truth_dataset()
+    if not truth_df.empty:
+        truth_lookup = truth_df[["EmployeeNumber", "Department", "Age", "Attrition", "PerformanceRating", "MonthlyIncome", "YearsAtCompany"]].copy()
+        truth_lookup = truth_lookup.rename(columns={"EmployeeNumber": "employee_id"})
+        raw_df = raw_df.merge(truth_lookup, on="employee_id", how="left")
+        raw_df["Department"] = raw_df["Department"].map(normalize_department)
+        raw_df["PerformanceRating"] = _normalize_performance_values(raw_df["PerformanceRating"])
+        raw_df["MonthlyIncome"] = pd.to_numeric(raw_df["MonthlyIncome"], errors="coerce").fillna(raw_df["salary"])
+        raw_df["YearsAtCompany"] = pd.to_numeric(raw_df["YearsAtCompany"], errors="coerce").fillna(
+            ((pd.Timestamp.now().normalize() - pd.to_datetime(raw_df["hire_date"])) / pd.Timedelta(days=365)).round(1)
+        )
+        raw_df["Attrition"] = raw_df["Attrition"].fillna("No")
+        raw_df["Age"] = pd.to_numeric(raw_df["Age"], errors="coerce").fillna(35)
+        raw_df = raw_df[
+            [
+                "employee_id", "Department", "YearsAtCompany",
+                "PerformanceRating", "MonthlyIncome", "Attrition", "Age"
+            ]
+        ].rename(columns={"employee_id": "EmployeeNumber", "Department": "Department"})
+    else:
+        raw_df["PerformanceRating"] = _normalize_performance_values(
+            pd.to_numeric(review_df["performance_score"].head(len(raw_df)), errors="coerce")
+        ).fillna(70)
+        raw_df["YearsAtCompany"] = (
+            (
+                pd.Timestamp.now().normalize()
+                - pd.to_datetime(raw_df["hire_date"])
+            ) / pd.Timedelta(days=365)
+        ).round(1)
+        raw_df["Attrition"] = "No"
+        raw_df["Age"] = 35
+        raw_df["MonthlyIncome"] = pd.to_numeric(
+            raw_df["salary"], errors="coerce"
+        ).fillna(0)
+        raw_df = raw_df.rename(
+            columns={"employee_id": "EmployeeNumber", "department": "Department"}
+        )
+        raw_df["Department"] = raw_df["Department"].map(normalize_department)
+        raw_df = raw_df[
+            [
+                "EmployeeNumber", "Department", "YearsAtCompany",
+                "PerformanceRating", "MonthlyIncome", "Attrition", "Age"
+            ]
         ]
-    ]
     return history_df, review_df, raw_df
 
 
@@ -256,12 +321,32 @@ def load_warehouse_analytics_data() -> pd.DataFrame:
     rows = cursor.fetchall()
     warehouse_df = pd.DataFrame(rows)
     if warehouse_df.empty:
-        raise ValueError(f"No warehouse fact rows found in {warehouse_database}.")
-    warehouse_df["review_date"] = pd.to_datetime(warehouse_df["review_date"]).dt.strftime("%Y-%m-%d")
-    warehouse_df["department"] = warehouse_df["department"].map(normalize_department)
-    return warehouse_df[
-        ["review_id", "employee_id", "department", "review_date", "performance_score"]
-    ]
+        truth_df = _load_raw_truth_dataset()
+        if truth_df.empty:
+            raise ValueError(f"No warehouse fact rows found in {warehouse_database}.")
+        warehouse_df = truth_df[["EmployeeNumber", "Department", "PerformanceRating", "Attrition"]].rename(
+            columns={"EmployeeNumber": "employee_id", "Department": "department", "PerformanceRating": "performance_score", "Attrition": "attrition"}
+        )
+        warehouse_df["review_id"] = range(1, len(warehouse_df) + 1)
+        warehouse_df["review_date"] = pd.to_datetime(2024 - 0, format="%Y").strftime("%Y-%m-%d")
+        warehouse_df["performance_score"] = _normalize_performance_values(warehouse_df["performance_score"])
+        warehouse_df["department"] = warehouse_df["department"].map(normalize_department)
+        warehouse_df = warehouse_df[["review_id", "employee_id", "department", "review_date", "performance_score", "attrition"]]
+    else:
+        warehouse_df["review_date"] = pd.to_datetime(warehouse_df["review_date"]).dt.strftime("%Y-%m-%d")
+        warehouse_df["performance_score"] = _normalize_performance_values(warehouse_df["performance_score"])
+        warehouse_df["department"] = warehouse_df["department"].map(normalize_department)
+        truth_df = _load_raw_truth_dataset()
+        if not truth_df.empty:
+            truth_lookup = truth_df[["EmployeeNumber", "Attrition"]].rename(columns={"EmployeeNumber": "employee_id", "Attrition": "attrition"})
+            warehouse_df = warehouse_df.merge(truth_lookup, on="employee_id", how="left")
+            warehouse_df["attrition"] = warehouse_df["attrition"].fillna("No")
+        else:
+            warehouse_df["attrition"] = "No"
+        warehouse_df = warehouse_df[
+            ["review_id", "employee_id", "department", "review_date", "performance_score", "attrition"]
+        ]
+    return warehouse_df
 
 
 def load_hr_data():

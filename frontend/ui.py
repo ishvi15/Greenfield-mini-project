@@ -1,11 +1,7 @@
-import random
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-
-from backend.department_service import DEPARTMENTS
-
 
 def compact_count(value: int) -> str:
     if value >= 1000:
@@ -51,7 +47,7 @@ def get_dashboard_counts(raw_df, review_df, history_df) -> dict[str, int]:
     return counts
 
 
-def render_sidebar(history_df, review_df, st_autorefresh):
+def render_sidebar(history_df, review_df, warehouse_review_df):
     with st.sidebar:
         st.markdown(
             """
@@ -90,29 +86,29 @@ def render_sidebar(history_df, review_df, st_autorefresh):
             pass
 
         st.markdown("<div class='section-title' style='margin-top:1.2rem;'>Filters</div>", unsafe_allow_html=True)
-        selected_department = st.selectbox("Department", ["All", *DEPARTMENTS])
-        selected_year = st.selectbox("Year", ["All"] + sorted(review_df["review_date"].str[:4].unique().tolist()))
+        department_values = pd.concat(
+            [
+                history_df.get("department", pd.Series(dtype="object")),
+                review_df.get("department", pd.Series(dtype="object")),
+                warehouse_review_df.get("department", pd.Series(dtype="object")),
+            ],
+            ignore_index=True,
+        ).dropna().astype(str).str.strip()
+        departments = sorted(value for value in department_values.unique() if value)
 
-        st.markdown("<div class='section-title' style='margin-top:1.2rem;'>Live pulse</div>", unsafe_allow_html=True)
-        st.session_state["live_mode"] = st.toggle(
-            "Enable live pulse",
-            value=st.session_state["live_mode"],
-            help="Reruns the dashboard on a timer and animates the KPIs. "
-            "Without a connected database this simulates small realistic "
-            "fluctuations so you can demo what a live feed would feel like "
-            "-- it's clearly labeled 'simulated', not real activity.",
+        date_values = pd.to_datetime(
+            pd.concat(
+                [
+                    review_df.get("review_date", pd.Series(dtype="object")),
+                    warehouse_review_df.get("review_date", pd.Series(dtype="object")),
+                ],
+                ignore_index=True,
+            ),
+            errors="coerce",
         )
-        if st.session_state["live_mode"]:
-            if st_autorefresh is not None:
-                refresh_seconds = st.select_slider(
-                    "Refresh every",
-                    options=[2, 3, 5, 8],
-                    value=3,
-                    format_func=lambda s: f"{s}s",
-                )
-                st_autorefresh(interval=refresh_seconds * 1000, key="kpi_live_refresh")
-            else:
-                st.caption("Live pulse is unavailable because streamlit-autorefresh is not installed.")
+        years = sorted(date_values.dropna().dt.year.astype(str).unique().tolist())
+        selected_department = st.selectbox("Department", ["All", *departments])
+        selected_year = st.selectbox("Year", ["All", *years])
 
         return selected_department, selected_year
 

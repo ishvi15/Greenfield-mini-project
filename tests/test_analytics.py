@@ -1,6 +1,28 @@
 import pandas as pd
 
+from backend.department_service import DEPARTMENTS, normalize_department
 from src.hr_analytics.analytics import HRAnalytics
+
+
+def test_ibm_department_catalog_matches_source_data():
+    assert "Research & Development" in DEPARTMENTS
+    assert "Human Resources" in DEPARTMENTS
+    assert "Sales" in DEPARTMENTS
+
+
+def test_ibm_performance_rating_is_normalized_to_0_100_scale():
+    df = pd.DataFrame(
+        {
+            "Department": ["Research & Development", "Sales", "Human Resources"],
+            "PerformanceRating": [3, 4, 2],
+        }
+    )
+
+    normalized = df.copy()
+    normalized["PerformanceRating"] = normalized["PerformanceRating"].map({1: 25, 2: 50, 3: 75, 4: 100})
+
+    assert normalized["PerformanceRating"].tolist() == [75, 100, 50]
+    assert normalize_department("R&D") == "Research & Development"
 
 
 def test_monthly_performance_summary():
@@ -16,6 +38,34 @@ def test_monthly_performance_summary():
     assert "year" in result.columns
     assert "avg_score" in result.columns
     assert len(result) == 2
+
+
+def test_analytics_normalizes_legacy_warehouse_scores():
+    df = pd.DataFrame(
+        {
+            "review_date": ["2023-01-01", "2024-01-01"],
+            "performance_score": [4.0, 5.0],
+        }
+    )
+
+    result = HRAnalytics().calculate_yearly_performance(df)
+
+    assert result["avg_score"].tolist() == [80.0, 100.0]
+
+
+def test_attrition_risk_uses_actual_attrition_values():
+    df = pd.DataFrame(
+        {
+            "department": ["Sales", "Sales", "Research & Development"],
+            "performance_score": [4.0, 4.0, 5.0],
+            "attrition": ["Yes", "No", "No"],
+        }
+    )
+
+    result = HRAnalytics().attrition_risk_summary(df)
+
+    sales_risk = result.loc[result["department"] == "Sales", "risk_score"].iloc[0]
+    assert sales_risk == 50.0
 
 
 def test_ranking_by_department():
